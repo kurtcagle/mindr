@@ -1,0 +1,33 @@
+{
+  "name": "mindr",
+  "version": "1.0.0",
+  "description": "This creates an express-based node application for retaining cards",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pouchdb": "^6.2.0",
+    "pouchdb-find": "^6.2.0",
+    "react": "^15.6.1",
+    "react-ui": "^0.6.2",
+    "xmldom": "^0.1.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kurt Cagle",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurtcagle/mindr.git"
+  },
+  "keywords": [
+    "mindr",
+    "node",
+    "semantics"
+  ],
+  "bugs": {
+    "url": "https://github.com/kurtcagle/mindr/issues"
+  },
+  "homepage": "https://github.com/kurtcagle/mindr#readme"
+}

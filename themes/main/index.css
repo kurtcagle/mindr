@@ -1,0 +1,9 @@
+:root {
+    --background:linear-gradient(to bottom,maroon,black);
+    --textcolor: white;
+}
+
+body {
+    background:var(--background);
+    color:var(--textcolor);
+    }

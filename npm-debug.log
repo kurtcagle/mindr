@@ -1,0 +1,2082 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/kcagle/.nvm/versions/io.js/v3.3.1/bin/iojs',
+1 verbose cli   '/home/kcagle/.nvm/versions/io.js/v3.3.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'pouch' ]
+2 info using npm@2.14.3
+3 info using node@v3.3.1
+4 verbose install initial load of /home/kcagle/nodeapps/mindr/package.json
+5 verbose installManyTop reading scoped package data from /home/kcagle/nodeapps/mindr/node_modules/express/package.json
+6 verbose installManyTop reading scoped package data from /home/kcagle/nodeapps/mindr/node_modules/react/package.json
+7 verbose installManyTop reading scoped package data from /home/kcagle/nodeapps/mindr/node_modules/react-ui/package.json
+8 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/package.json
+9 silly cache add args [ 'pouch', null ]
+10 verbose cache add spec pouch
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'pouch',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'pouch',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: '*',
+11 silly cache add   type: 'range' }
+12 silly addNamed pouch@*
+13 verbose addNamed "*" is a valid semver range for pouch
+14 silly addNameRange { name: 'pouch', range: '*', hasData: false }
+15 silly mapToRegistry name pouch
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/pouch
+19 verbose addNameRange registry:https://registry.npmjs.org/pouch not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/pouch
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 12:01:34 PM
+23 verbose request id 5119f2299aa73465
+24 http request GET https://registry.npmjs.org/pouch
+25 http 200 https://registry.npmjs.org/pouch
+26 silly get cb [ 200,
+26 silly get   { server: 'nginx/1.10.1',
+26 silly get     'content-type': 'application/json',
+26 silly get     'last-modified': 'Fri, 04 May 2012 10:02:07 GMT',
+26 silly get     etag: 'W/"4fa3a91f-54d"',
+26 silly get     'content-encoding': 'gzip',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     'content-length': '614',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-lax8623-LAX',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1499023097.075579,VS0,VE162',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose get saving pouch to /home/kcagle/.npm/registry.npmjs.org/pouch/.cache.json
+28 silly addNameRange number 2 { name: 'pouch', range: '*', hasData: true }
+29 silly addNameRange versions [ 'pouch', [ '0.0.0' ] ]
+30 silly addNamed pouch@0.0.0
+31 verbose addNamed "0.0.0" is a plain semver version for pouch
+32 silly mapToRegistry name pouch
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/pouch
+36 verbose addRemoteTarball https://registry.npmjs.org/pouch/-/pouch-0.0.0.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/pouch/-/pouch-0.0.0.tgz',
+37 verbose addRemoteTarball   'c456fe4f192f2a92ac58a3358c81fbb9d272d77a' ]
+38 info retry fetch attempt 1 at 12:01:35 PM
+39 info attempt registry request try #1 at 12:01:35 PM
+40 http fetch GET https://registry.npmjs.org/pouch/-/pouch-0.0.0.tgz
+41 http fetch 200 https://registry.npmjs.org/pouch/-/pouch-0.0.0.tgz
+42 silly fetchAndShaCheck shasum c456fe4f192f2a92ac58a3358c81fbb9d272d77a
+43 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/pouch/-/pouch-0.0.0.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for pouch@0.0.0
+45 silly cache afterAdd pouch@0.0.0
+46 verbose afterAdd /home/kcagle/.npm/pouch/0.0.0/package/package.json not in flight; writing
+47 verbose afterAdd /home/kcagle/.npm/pouch/0.0.0/package/package.json written
+48 silly install resolved [ { author: { name: 'Daniel Brockman', email: '@dbrock' },
+48 silly install resolved     name: 'pouch',
+48 silly install resolved     description: 'A collection of useful JavaScript and Node.js utilities',
+48 silly install resolved     version: '0.0.0',
+48 silly install resolved     main: 'pouch.js',
+48 silly install resolved     dependencies:
+48 silly install resolved      { apply: '~0.0.0',
+48 silly install resolved        bcrypt: '~0.5.0',
+48 silly install resolved        colors: '~0.6.0',
+48 silly install resolved        jungle: '~0.0.0',
+48 silly install resolved        kexec: '~0.0.3',
+48 silly install resolved        main: 'git://github.com/dbrock/node-main',
+48 silly install resolved        'regexp-quote': '~0.0.0',
+48 silly install resolved        step: '~0.0.5',
+48 silly install resolved        underscore: '~1.3.3',
+48 silly install resolved        'underscore.string': '~2.2.0',
+48 silly install resolved        wood: '~0.0.0' },
+48 silly install resolved     devDependencies: {},
+48 silly install resolved     optionalDependencies: {},
+48 silly install resolved     engines: { node: '*' },
+48 silly install resolved     _npmUser: { name: 'dbrock', email: 'daniel@brockman.se' },
+48 silly install resolved     _id: 'pouch@0.0.0',
+48 silly install resolved     _engineSupported: true,
+48 silly install resolved     _npmVersion: '1.1.18',
+48 silly install resolved     _nodeVersion: 'v0.6.15',
+48 silly install resolved     _defaultsLoaded: true,
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: 'c456fe4f192f2a92ac58a3358c81fbb9d272d77a',
+48 silly install resolved        tarball: 'https://registry.npmjs.org/pouch/-/pouch-0.0.0.tgz' },
+48 silly install resolved     readme: '',
+48 silly install resolved     maintainers: [ [Object] ],
+48 silly install resolved     directories: {},
+48 silly install resolved     _shasum: 'c456fe4f192f2a92ac58a3358c81fbb9d272d77a',
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/pouch/-/pouch-0.0.0.tgz',
+48 silly install resolved     _from: 'pouch@*' } ]
+49 info install pouch@0.0.0 into /home/kcagle/nodeapps/mindr
+50 info installOne pouch@0.0.0
+51 verbose installOne of pouch to /home/kcagle/nodeapps/mindr not in flight; installing
+52 verbose lock using /home/kcagle/.npm/_locks/pouch-4541aad1473bd284.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch
+53 silly install write writing pouch 0.0.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch
+54 verbose unbuild node_modules/pouch
+55 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch is being purged from base /home/kcagle/nodeapps/mindr
+56 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch
+57 verbose tar unpack /home/kcagle/.npm/pouch/0.0.0/package.tgz
+58 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch
+59 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch is being purged
+60 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch
+61 silly gunzTarPerm modes [ '775', '664' ]
+62 silly gunzTarPerm extractEntry package.json
+63 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+64 silly gunzTarPerm extractEntry get-random-sha1.js
+65 silly gunzTarPerm modified mode [ 'get-random-sha1.js', 420, 436 ]
+66 silly gunzTarPerm extractEntry pouch-mixins.js
+67 silly gunzTarPerm modified mode [ 'pouch-mixins.js', 420, 436 ]
+68 silly gunzTarPerm extractEntry pouch.js
+69 silly gunzTarPerm modified mode [ 'pouch.js', 420, 436 ]
+70 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/package.json
+71 info preinstall pouch@0.0.0
+72 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/package.json
+73 silly prepareForInstallMany adding apply@~0.0.0 from pouch dependencies
+74 silly prepareForInstallMany adding bcrypt@~0.5.0 from pouch dependencies
+75 silly prepareForInstallMany adding colors@~0.6.0 from pouch dependencies
+76 silly prepareForInstallMany adding jungle@~0.0.0 from pouch dependencies
+77 silly prepareForInstallMany adding kexec@~0.0.3 from pouch dependencies
+78 silly prepareForInstallMany adding main@git://github.com/dbrock/node-main.git from pouch dependencies
+79 silly prepareForInstallMany adding regexp-quote@~0.0.0 from pouch dependencies
+80 silly prepareForInstallMany adding step@~0.0.5 from pouch dependencies
+81 silly prepareForInstallMany adding underscore@~1.3.3 from pouch dependencies
+82 silly prepareForInstallMany adding underscore.string@~2.2.0 from pouch dependencies
+83 silly prepareForInstallMany adding wood@~0.0.0 from pouch dependencies
+84 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/package.json
+85 silly cache add args [ 'colors@~0.6.0', null ]
+86 verbose cache add spec colors@~0.6.0
+87 silly cache add parsed spec Result {
+87 silly cache add   raw: 'colors@~0.6.0',
+87 silly cache add   scope: null,
+87 silly cache add   name: 'colors',
+87 silly cache add   rawSpec: '~0.6.0',
+87 silly cache add   spec: '>=0.6.0 <0.7.0',
+87 silly cache add   type: 'range' }
+88 silly addNamed colors@>=0.6.0 <0.7.0
+89 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for colors
+90 silly addNameRange { name: 'colors', range: '>=0.6.0 <0.7.0', hasData: false }
+91 silly mapToRegistry name colors
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry uri https://registry.npmjs.org/colors
+95 verbose addNameRange registry:https://registry.npmjs.org/colors not in flight; fetching
+96 silly cache add args [ 'jungle@~0.0.0', null ]
+97 verbose cache add spec jungle@~0.0.0
+98 silly cache add parsed spec Result {
+98 silly cache add   raw: 'jungle@~0.0.0',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'jungle',
+98 silly cache add   rawSpec: '~0.0.0',
+98 silly cache add   spec: '>=0.0.0 <0.1.0',
+98 silly cache add   type: 'range' }
+99 silly addNamed jungle@>=0.0.0 <0.1.0
+100 verbose addNamed ">=0.0.0 <0.1.0" is a valid semver range for jungle
+101 silly addNameRange { name: 'jungle', range: '>=0.0.0 <0.1.0', hasData: false }
+102 silly mapToRegistry name jungle
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/jungle
+106 verbose addNameRange registry:https://registry.npmjs.org/jungle not in flight; fetching
+107 silly cache add args [ 'kexec@~0.0.3', null ]
+108 verbose cache add spec kexec@~0.0.3
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'kexec@~0.0.3',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'kexec',
+109 silly cache add   rawSpec: '~0.0.3',
+109 silly cache add   spec: '>=0.0.3 <0.1.0',
+109 silly cache add   type: 'range' }
+110 silly addNamed kexec@>=0.0.3 <0.1.0
+111 verbose addNamed ">=0.0.3 <0.1.0" is a valid semver range for kexec
+112 silly addNameRange { name: 'kexec', range: '>=0.0.3 <0.1.0', hasData: false }
+113 silly mapToRegistry name kexec
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/kexec
+117 verbose addNameRange registry:https://registry.npmjs.org/kexec not in flight; fetching
+118 silly cache add args [ 'main@git://github.com/dbrock/node-main.git', null ]
+119 verbose cache add spec main@git://github.com/dbrock/node-main.git
+120 silly cache add args [ 'regexp-quote@~0.0.0', null ]
+121 verbose cache add spec regexp-quote@~0.0.0
+122 silly cache add parsed spec Result {
+122 silly cache add   raw: 'regexp-quote@~0.0.0',
+122 silly cache add   scope: null,
+122 silly cache add   name: 'regexp-quote',
+122 silly cache add   rawSpec: '~0.0.0',
+122 silly cache add   spec: '>=0.0.0 <0.1.0',
+122 silly cache add   type: 'range' }
+123 silly addNamed regexp-quote@>=0.0.0 <0.1.0
+124 verbose addNamed ">=0.0.0 <0.1.0" is a valid semver range for regexp-quote
+125 silly addNameRange { name: 'regexp-quote', range: '>=0.0.0 <0.1.0', hasData: false }
+126 silly mapToRegistry name regexp-quote
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry https://registry.npmjs.org/
+129 silly mapToRegistry uri https://registry.npmjs.org/regexp-quote
+130 verbose addNameRange registry:https://registry.npmjs.org/regexp-quote not in flight; fetching
+131 silly cache add args [ 'step@~0.0.5', null ]
+132 verbose cache add spec step@~0.0.5
+133 silly cache add parsed spec Result {
+133 silly cache add   raw: 'step@~0.0.5',
+133 silly cache add   scope: null,
+133 silly cache add   name: 'step',
+133 silly cache add   rawSpec: '~0.0.5',
+133 silly cache add   spec: '>=0.0.5 <0.1.0',
+133 silly cache add   type: 'range' }
+134 silly addNamed step@>=0.0.5 <0.1.0
+135 verbose addNamed ">=0.0.5 <0.1.0" is a valid semver range for step
+136 silly addNameRange { name: 'step', range: '>=0.0.5 <0.1.0', hasData: false }
+137 silly mapToRegistry name step
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry uri https://registry.npmjs.org/step
+141 verbose addNameRange registry:https://registry.npmjs.org/step not in flight; fetching
+142 silly cache add args [ 'underscore@~1.3.3', null ]
+143 verbose cache add spec underscore@~1.3.3
+144 silly cache add parsed spec Result {
+144 silly cache add   raw: 'underscore@~1.3.3',
+144 silly cache add   scope: null,
+144 silly cache add   name: 'underscore',
+144 silly cache add   rawSpec: '~1.3.3',
+144 silly cache add   spec: '>=1.3.3 <1.4.0',
+144 silly cache add   type: 'range' }
+145 silly addNamed underscore@>=1.3.3 <1.4.0
+146 verbose addNamed ">=1.3.3 <1.4.0" is a valid semver range for underscore
+147 silly addNameRange { name: 'underscore', range: '>=1.3.3 <1.4.0', hasData: false }
+148 silly mapToRegistry name underscore
+149 silly mapToRegistry using default registry
+150 silly mapToRegistry registry https://registry.npmjs.org/
+151 silly mapToRegistry uri https://registry.npmjs.org/underscore
+152 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+153 silly cache add args [ 'underscore.string@~2.2.0', null ]
+154 verbose cache add spec underscore.string@~2.2.0
+155 silly cache add parsed spec Result {
+155 silly cache add   raw: 'underscore.string@~2.2.0',
+155 silly cache add   scope: null,
+155 silly cache add   name: 'underscore.string',
+155 silly cache add   rawSpec: '~2.2.0',
+155 silly cache add   spec: '>=2.2.0 <2.3.0',
+155 silly cache add   type: 'range' }
+156 silly addNamed underscore.string@>=2.2.0 <2.3.0
+157 verbose addNamed ">=2.2.0 <2.3.0" is a valid semver range for underscore.string
+158 silly addNameRange { name: 'underscore.string',
+158 silly addNameRange   range: '>=2.2.0 <2.3.0',
+158 silly addNameRange   hasData: false }
+159 silly mapToRegistry name underscore.string
+160 silly mapToRegistry using default registry
+161 silly mapToRegistry registry https://registry.npmjs.org/
+162 silly mapToRegistry uri https://registry.npmjs.org/underscore.string
+163 verbose addNameRange registry:https://registry.npmjs.org/underscore.string not in flight; fetching
+164 silly cache add args [ 'wood@~0.0.0', null ]
+165 verbose cache add spec wood@~0.0.0
+166 silly cache add parsed spec Result {
+166 silly cache add   raw: 'wood@~0.0.0',
+166 silly cache add   scope: null,
+166 silly cache add   name: 'wood',
+166 silly cache add   rawSpec: '~0.0.0',
+166 silly cache add   spec: '>=0.0.0 <0.1.0',
+166 silly cache add   type: 'range' }
+167 silly addNamed wood@>=0.0.0 <0.1.0
+168 verbose addNamed ">=0.0.0 <0.1.0" is a valid semver range for wood
+169 silly addNameRange { name: 'wood', range: '>=0.0.0 <0.1.0', hasData: false }
+170 silly mapToRegistry name wood
+171 silly mapToRegistry using default registry
+172 silly mapToRegistry registry https://registry.npmjs.org/
+173 silly mapToRegistry uri https://registry.npmjs.org/wood
+174 verbose addNameRange registry:https://registry.npmjs.org/wood not in flight; fetching
+175 silly cache add args [ 'apply@~0.0.0', null ]
+176 verbose cache add spec apply@~0.0.0
+177 silly cache add parsed spec Result {
+177 silly cache add   raw: 'apply@~0.0.0',
+177 silly cache add   scope: null,
+177 silly cache add   name: 'apply',
+177 silly cache add   rawSpec: '~0.0.0',
+177 silly cache add   spec: '>=0.0.0 <0.1.0',
+177 silly cache add   type: 'range' }
+178 silly addNamed apply@>=0.0.0 <0.1.0
+179 verbose addNamed ">=0.0.0 <0.1.0" is a valid semver range for apply
+180 silly addNameRange { name: 'apply', range: '>=0.0.0 <0.1.0', hasData: false }
+181 silly mapToRegistry name apply
+182 silly mapToRegistry using default registry
+183 silly mapToRegistry registry https://registry.npmjs.org/
+184 silly mapToRegistry uri https://registry.npmjs.org/apply
+185 verbose addNameRange registry:https://registry.npmjs.org/apply not in flight; fetching
+186 silly cache add args [ 'bcrypt@~0.5.0', null ]
+187 verbose cache add spec bcrypt@~0.5.0
+188 silly cache add parsed spec Result {
+188 silly cache add   raw: 'bcrypt@~0.5.0',
+188 silly cache add   scope: null,
+188 silly cache add   name: 'bcrypt',
+188 silly cache add   rawSpec: '~0.5.0',
+188 silly cache add   spec: '>=0.5.0 <0.6.0',
+188 silly cache add   type: 'range' }
+189 silly addNamed bcrypt@>=0.5.0 <0.6.0
+190 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for bcrypt
+191 silly addNameRange { name: 'bcrypt', range: '>=0.5.0 <0.6.0', hasData: false }
+192 silly mapToRegistry name bcrypt
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+196 verbose addNameRange registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+197 verbose request uri https://registry.npmjs.org/colors
+198 verbose request no auth needed
+199 info attempt registry request try #1 at 12:01:35 PM
+200 http request GET https://registry.npmjs.org/colors
+201 verbose request uri https://registry.npmjs.org/jungle
+202 verbose request no auth needed
+203 info attempt registry request try #1 at 12:01:35 PM
+204 http request GET https://registry.npmjs.org/jungle
+205 verbose request uri https://registry.npmjs.org/kexec
+206 verbose request no auth needed
+207 info attempt registry request try #1 at 12:01:35 PM
+208 http request GET https://registry.npmjs.org/kexec
+209 silly cache add parsed spec Result {
+209 silly cache add   raw: 'main@git://github.com/dbrock/node-main.git',
+209 silly cache add   scope: null,
+209 silly cache add   name: 'main',
+209 silly cache add   rawSpec: 'git://github.com/dbrock/node-main.git',
+209 silly cache add   spec: 'git://github.com/dbrock/node-main.git',
+209 silly cache add   type: 'hosted',
+209 silly cache add   hosted:
+209 silly cache add    { type: 'github',
+209 silly cache add      ssh: 'git@github.com:dbrock/node-main.git',
+209 silly cache add      sshUrl: 'git+ssh://git@github.com/dbrock/node-main.git',
+209 silly cache add      httpsUrl: 'git+https://github.com/dbrock/node-main.git',
+209 silly cache add      gitUrl: 'git://github.com/dbrock/node-main.git',
+209 silly cache add      shortcut: 'github:dbrock/node-main',
+209 silly cache add      directUrl: 'https://raw.githubusercontent.com/dbrock/node-main/master/package.json' } }
+210 verbose addRemoteGit caching git://github.com/dbrock/node-main.git
+211 verbose addRemoteGit git://github.com/dbrock/node-main.git is a repository hosted by github
+212 silly tryClone cloning git://github.com/dbrock/node-main.git via git://github.com/dbrock/node-main.git
+213 verbose tryClone git-github-com-dbrock-node-main-git-2ccd6cb7 not in flight; caching
+214 verbose request uri https://registry.npmjs.org/regexp-quote
+215 verbose request no auth needed
+216 info attempt registry request try #1 at 12:01:35 PM
+217 http request GET https://registry.npmjs.org/regexp-quote
+218 verbose request uri https://registry.npmjs.org/step
+219 verbose request no auth needed
+220 info attempt registry request try #1 at 12:01:35 PM
+221 http request GET https://registry.npmjs.org/step
+222 verbose request uri https://registry.npmjs.org/underscore
+223 verbose request no auth needed
+224 info attempt registry request try #1 at 12:01:35 PM
+225 http request GET https://registry.npmjs.org/underscore
+226 verbose request uri https://registry.npmjs.org/underscore.string
+227 verbose request no auth needed
+228 info attempt registry request try #1 at 12:01:35 PM
+229 http request GET https://registry.npmjs.org/underscore.string
+230 verbose request uri https://registry.npmjs.org/wood
+231 verbose request no auth needed
+232 info attempt registry request try #1 at 12:01:35 PM
+233 http request GET https://registry.npmjs.org/wood
+234 verbose request uri https://registry.npmjs.org/apply
+235 verbose request no auth needed
+236 info attempt registry request try #1 at 12:01:35 PM
+237 http request GET https://registry.npmjs.org/apply
+238 verbose request uri https://registry.npmjs.org/bcrypt
+239 verbose request no auth needed
+240 info attempt registry request try #1 at 12:01:35 PM
+241 http request GET https://registry.npmjs.org/bcrypt
+242 verbose makeDirectory /home/kcagle/.npm/_git-remotes creation not in flight; initializing
+243 silly makeDirectory /home/kcagle/.npm/_git-remotes uid: 1000 gid: 1000
+244 info git [ 'clone',
+244 info git   '--template=/home/kcagle/.npm/_git-remotes/_templates',
+244 info git   '--mirror',
+244 info git   'git://github.com/dbrock/node-main.git',
+244 info git   '/home/kcagle/.npm/_git-remotes/git-github-com-dbrock-node-main-git-2ccd6cb7' ]
+245 http 200 https://registry.npmjs.org/colors
+246 silly get cb [ 200,
+246 silly get   { server: 'nginx/1.10.3',
+246 silly get     'content-type': 'application/json',
+246 silly get     'last-modified': 'Fri, 30 Jun 2017 06:19:53 GMT',
+246 silly get     etag: 'W/"5955ed89-5a12"',
+246 silly get     'content-encoding': 'gzip',
+246 silly get     'cache-control': 'max-age=300',
+246 silly get     'content-length': '6152',
+246 silly get     'accept-ranges': 'bytes',
+246 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+246 silly get     via: '1.1 varnish',
+246 silly get     age: '172',
+246 silly get     connection: 'keep-alive',
+246 silly get     'x-served-by': 'cache-lax8642-LAX',
+246 silly get     'x-cache': 'HIT',
+246 silly get     'x-cache-hits': '1',
+246 silly get     'x-timer': 'S1499023098.553075,VS0,VE1',
+246 silly get     vary: 'Accept-Encoding' } ]
+247 verbose get saving colors to /home/kcagle/.npm/registry.npmjs.org/colors/.cache.json
+248 http 200 https://registry.npmjs.org/underscore
+249 silly get cb [ 200,
+249 silly get   { server: 'nginx/1.10.1',
+249 silly get     'content-type': 'application/json',
+249 silly get     'last-modified': 'Sun, 02 Jul 2017 05:37:54 GMT',
+249 silly get     etag: 'W/"595886b2-ae1b"',
+249 silly get     'content-encoding': 'gzip',
+249 silly get     'cache-control': 'max-age=300',
+249 silly get     'content-length': '7436',
+249 silly get     'accept-ranges': 'bytes',
+249 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+249 silly get     via: '1.1 varnish',
+249 silly get     age: '101',
+249 silly get     connection: 'keep-alive',
+249 silly get     'x-served-by': 'cache-lax8649-LAX',
+249 silly get     'x-cache': 'HIT',
+249 silly get     'x-cache-hits': '1',
+249 silly get     'x-timer': 'S1499023098.553798,VS0,VE1',
+249 silly get     vary: 'Accept-Encoding' } ]
+250 verbose get saving underscore to /home/kcagle/.npm/registry.npmjs.org/underscore/.cache.json
+251 http 200 https://registry.npmjs.org/underscore.string
+252 silly get cb [ 200,
+252 silly get   { server: 'nginx/1.10.1',
+252 silly get     'content-type': 'application/json',
+252 silly get     'last-modified': 'Sat, 01 Jul 2017 16:40:28 GMT',
+252 silly get     etag: 'W/"5957d07c-14b66"',
+252 silly get     'content-encoding': 'gzip',
+252 silly get     'cache-control': 'max-age=300',
+252 silly get     'content-length': '12235',
+252 silly get     'accept-ranges': 'bytes',
+252 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+252 silly get     via: '1.1 varnish',
+252 silly get     age: '236',
+252 silly get     connection: 'keep-alive',
+252 silly get     'x-served-by': 'cache-lax8638-LAX',
+252 silly get     'x-cache': 'HIT',
+252 silly get     'x-cache-hits': '1',
+252 silly get     'x-timer': 'S1499023098.554502,VS0,VE1',
+252 silly get     vary: 'Accept-Encoding' } ]
+253 verbose get saving underscore.string to /home/kcagle/.npm/registry.npmjs.org/underscore.string/.cache.json
+254 silly addNameRange number 2 { name: 'colors', range: '>=0.6.0 <0.7.0', hasData: true }
+255 silly addNameRange versions [ 'colors',
+255 silly addNameRange   [ '0.3.0',
+255 silly addNameRange     '0.5.0',
+255 silly addNameRange     '0.5.1',
+255 silly addNameRange     '0.6.0',
+255 silly addNameRange     '0.6.0-1',
+255 silly addNameRange     '0.6.1',
+255 silly addNameRange     '0.6.2',
+255 silly addNameRange     '1.0.0',
+255 silly addNameRange     '1.0.1',
+255 silly addNameRange     '1.0.2',
+255 silly addNameRange     '1.0.3',
+255 silly addNameRange     '1.1.0',
+255 silly addNameRange     '1.1.1',
+255 silly addNameRange     '1.1.2' ] ]
+256 silly addNamed colors@0.6.2
+257 verbose addNamed "0.6.2" is a plain semver version for colors
+258 silly mapToRegistry name colors
+259 silly mapToRegistry using default registry
+260 silly mapToRegistry registry https://registry.npmjs.org/
+261 silly mapToRegistry uri https://registry.npmjs.org/colors
+262 verbose addRemoteTarball https://registry.npmjs.org/colors/-/colors-0.6.2.tgz not in flight; adding
+263 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz',
+263 verbose addRemoteTarball   '2423fe6678ac0c5dae8852e5d0e5be08c997abcc' ]
+264 silly addNameRange number 2 { name: 'underscore', range: '>=1.3.3 <1.4.0', hasData: true }
+265 silly addNameRange versions [ 'underscore',
+265 silly addNameRange   [ '1.0.3',
+265 silly addNameRange     '1.0.4',
+265 silly addNameRange     '1.1.0',
+265 silly addNameRange     '1.1.1',
+265 silly addNameRange     '1.1.2',
+265 silly addNameRange     '1.1.3',
+265 silly addNameRange     '1.1.4',
+265 silly addNameRange     '1.1.5',
+265 silly addNameRange     '1.1.6',
+265 silly addNameRange     '1.1.7',
+265 silly addNameRange     '1.2.0',
+265 silly addNameRange     '1.2.1',
+265 silly addNameRange     '1.2.2',
+265 silly addNameRange     '1.2.3',
+265 silly addNameRange     '1.2.4',
+265 silly addNameRange     '1.3.0',
+265 silly addNameRange     '1.3.1',
+265 silly addNameRange     '1.3.2',
+265 silly addNameRange     '1.3.3',
+265 silly addNameRange     '1.4.0',
+265 silly addNameRange     '1.4.1',
+265 silly addNameRange     '1.4.2',
+265 silly addNameRange     '1.4.3',
+265 silly addNameRange     '1.4.4',
+265 silly addNameRange     '1.5.0',
+265 silly addNameRange     '1.5.1',
+265 silly addNameRange     '1.5.2',
+265 silly addNameRange     '1.6.0',
+265 silly addNameRange     '1.7.0',
+265 silly addNameRange     '1.8.0',
+265 silly addNameRange     '1.8.1',
+265 silly addNameRange     '1.8.2',
+265 silly addNameRange     '1.8.3' ] ]
+266 silly addNamed underscore@1.3.3
+267 verbose addNamed "1.3.3" is a plain semver version for underscore
+268 silly mapToRegistry name underscore
+269 silly mapToRegistry using default registry
+270 silly mapToRegistry registry https://registry.npmjs.org/
+271 silly mapToRegistry uri https://registry.npmjs.org/underscore
+272 verbose addRemoteTarball https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz not in flight; adding
+273 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz',
+273 verbose addRemoteTarball   '47ac53683daf832bfa952e1774417da47817ae42' ]
+274 http 200 https://registry.npmjs.org/regexp-quote
+275 silly get cb [ 200,
+275 silly get   { server: 'nginx/1.10.1',
+275 silly get     'content-type': 'application/json',
+275 silly get     'last-modified': 'Sun, 29 Apr 2012 22:49:12 GMT',
+275 silly get     etag: 'W/"4f9dc568-590"',
+275 silly get     'content-encoding': 'gzip',
+275 silly get     'cache-control': 'max-age=300',
+275 silly get     'content-length': '593',
+275 silly get     'accept-ranges': 'bytes',
+275 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+275 silly get     via: '1.1 varnish',
+275 silly get     age: '0',
+275 silly get     connection: 'keep-alive',
+275 silly get     'x-served-by': 'cache-lax8646-LAX',
+275 silly get     'x-cache': 'MISS',
+275 silly get     'x-cache-hits': '0',
+275 silly get     'x-timer': 'S1499023098.554104,VS0,VE31',
+275 silly get     vary: 'Accept-Encoding' } ]
+276 verbose get saving regexp-quote to /home/kcagle/.npm/registry.npmjs.org/regexp-quote/.cache.json
+277 http 200 https://registry.npmjs.org/step
+278 silly get cb [ 200,
+278 silly get   { server: 'nginx/1.10.1',
+278 silly get     'content-type': 'application/json',
+278 silly get     'last-modified': 'Fri, 12 May 2017 18:35:53 GMT',
+278 silly get     etag: 'W/"59160089-2189"',
+278 silly get     'content-encoding': 'gzip',
+278 silly get     'cache-control': 'max-age=300',
+278 silly get     'content-length': '2519',
+278 silly get     'accept-ranges': 'bytes',
+278 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+278 silly get     via: '1.1 varnish',
+278 silly get     age: '0',
+278 silly get     connection: 'keep-alive',
+278 silly get     'x-served-by': 'cache-lax8641-LAX',
+278 silly get     'x-cache': 'HIT',
+278 silly get     'x-cache-hits': '1',
+278 silly get     'x-timer': 'S1499023098.553790,VS0,VE34',
+278 silly get     vary: 'Accept-Encoding' } ]
+279 verbose get saving step to /home/kcagle/.npm/registry.npmjs.org/step/.cache.json
+280 info retry fetch attempt 1 at 12:01:35 PM
+281 info attempt registry request try #1 at 12:01:35 PM
+282 http fetch GET https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+283 silly addNameRange number 2 { name: 'underscore.string',
+283 silly addNameRange   range: '>=2.2.0 <2.3.0',
+283 silly addNameRange   hasData: true }
+284 silly addNameRange versions [ 'underscore.string',
+284 silly addNameRange   [ '0.9.2',
+284 silly addNameRange     '1.0.0',
+284 silly addNameRange     '1.1.3',
+284 silly addNameRange     '1.1.4',
+284 silly addNameRange     '1.1.5',
+284 silly addNameRange     '1.1.6',
+284 silly addNameRange     '2.0.0',
+284 silly addNameRange     '2.1.0',
+284 silly addNameRange     '2.1.1',
+284 silly addNameRange     '2.3.0',
+284 silly addNameRange     '2.3.1',
+284 silly addNameRange     '2.3.2',
+284 silly addNameRange     '2.2.1',
+284 silly addNameRange     '2.2.0-rc',
+284 silly addNameRange     '2.3.3',
+284 silly addNameRange     '2.4.0',
+284 silly addNameRange     '3.0.0',
+284 silly addNameRange     '3.0.1',
+284 silly addNameRange     '3.0.2',
+284 silly addNameRange     '3.0.3',
+284 silly addNameRange     '3.1.0',
+284 silly addNameRange     '3.1.1',
+284 silly addNameRange     '3.2.0',
+284 silly addNameRange     '3.2.1',
+284 silly addNameRange     '3.2.2',
+284 silly addNameRange     '3.2.3',
+284 silly addNameRange     '3.3.0',
+284 silly addNameRange     '3.3.2',
+284 silly addNameRange     '3.3.3',
+284 silly addNameRange     '3.3.4' ] ]
+285 silly addNamed underscore.string@2.2.1
+286 verbose addNamed "2.2.1" is a plain semver version for underscore.string
+287 info retry fetch attempt 1 at 12:01:35 PM
+288 info attempt registry request try #1 at 12:01:35 PM
+289 http fetch GET https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz
+290 silly mapToRegistry name underscore.string
+291 silly mapToRegistry using default registry
+292 silly mapToRegistry registry https://registry.npmjs.org/
+293 silly mapToRegistry uri https://registry.npmjs.org/underscore.string
+294 verbose addRemoteTarball https://registry.npmjs.org/underscore.string/-/underscore.string-2.2.1.tgz not in flight; adding
+295 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore.string/-/underscore.string-2.2.1.tgz',
+295 verbose addRemoteTarball   'd7c0fa2af5d5a1a67f4253daee98132e733f0f19' ]
+296 info retry fetch attempt 1 at 12:01:35 PM
+297 info attempt registry request try #1 at 12:01:35 PM
+298 http fetch GET https://registry.npmjs.org/underscore.string/-/underscore.string-2.2.1.tgz
+299 silly addNameRange number 2 { name: 'regexp-quote', range: '>=0.0.0 <0.1.0', hasData: true }
+300 silly addNameRange versions [ 'regexp-quote', [ '0.0.0' ] ]
+301 silly addNamed regexp-quote@0.0.0
+302 verbose addNamed "0.0.0" is a plain semver version for regexp-quote
+303 silly mapToRegistry name regexp-quote
+304 silly mapToRegistry using default registry
+305 silly mapToRegistry registry https://registry.npmjs.org/
+306 silly mapToRegistry uri https://registry.npmjs.org/regexp-quote
+307 verbose addRemoteTarball https://registry.npmjs.org/regexp-quote/-/regexp-quote-0.0.0.tgz not in flight; adding
+308 verbose addRemoteTarball [ 'https://registry.npmjs.org/regexp-quote/-/regexp-quote-0.0.0.tgz',
+308 verbose addRemoteTarball   '1e0f4650c862dcbfed54fd42b148e9bb1721fcf2' ]
+309 silly addNameRange number 2 { name: 'step', range: '>=0.0.5 <0.1.0', hasData: true }
+310 silly addNameRange versions [ 'step', [ '0.0.3', '0.0.4', '0.0.5', '0.0.6', '1.0.0' ] ]
+311 silly addNamed step@0.0.6
+312 verbose addNamed "0.0.6" is a plain semver version for step
+313 silly mapToRegistry name step
+314 silly mapToRegistry using default registry
+315 silly mapToRegistry registry https://registry.npmjs.org/
+316 silly mapToRegistry uri https://registry.npmjs.org/step
+317 verbose addRemoteTarball https://registry.npmjs.org/step/-/step-0.0.6.tgz not in flight; adding
+318 verbose addRemoteTarball [ 'https://registry.npmjs.org/step/-/step-0.0.6.tgz',
+318 verbose addRemoteTarball   '143e7849a5d7d3f4a088fe29af94915216eeede2' ]
+319 info retry fetch attempt 1 at 12:01:35 PM
+320 info attempt registry request try #1 at 12:01:35 PM
+321 http fetch GET https://registry.npmjs.org/regexp-quote/-/regexp-quote-0.0.0.tgz
+322 info retry fetch attempt 1 at 12:01:35 PM
+323 info attempt registry request try #1 at 12:01:35 PM
+324 http fetch GET https://registry.npmjs.org/step/-/step-0.0.6.tgz
+325 http fetch 200 https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+326 silly fetchAndShaCheck shasum 2423fe6678ac0c5dae8852e5d0e5be08c997abcc
+327 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/colors/-/colors-0.6.2.tgz not in flight; adding
+328 verbose addTmpTarball already have metadata; skipping unpack for colors@0.6.2
+329 http fetch 200 https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz
+330 http fetch 200 https://registry.npmjs.org/underscore.string/-/underscore.string-2.2.1.tgz
+331 silly cache afterAdd colors@0.6.2
+332 verbose afterAdd /home/kcagle/.npm/colors/0.6.2/package/package.json not in flight; writing
+333 verbose afterAdd /home/kcagle/.npm/colors/0.6.2/package/package.json written
+334 http 200 https://registry.npmjs.org/kexec
+335 silly get cb [ 200,
+335 silly get   { server: 'nginx/1.10.3',
+335 silly get     'content-type': 'application/json',
+335 silly get     'last-modified': 'Sun, 11 Sep 2016 13:50:14 GMT',
+335 silly get     etag: 'W/"57d56116-4bf2"',
+335 silly get     'content-encoding': 'gzip',
+335 silly get     'cache-control': 'max-age=300',
+335 silly get     'content-length': '3222',
+335 silly get     'accept-ranges': 'bytes',
+335 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+335 silly get     via: '1.1 varnish',
+335 silly get     age: '0',
+335 silly get     connection: 'keep-alive',
+335 silly get     'x-served-by': 'cache-lax8637-LAX',
+335 silly get     'x-cache': 'MISS',
+335 silly get     'x-cache-hits': '0',
+335 silly get     'x-timer': 'S1499023098.554074,VS0,VE125',
+335 silly get     vary: 'Accept-Encoding' } ]
+336 verbose get saving kexec to /home/kcagle/.npm/registry.npmjs.org/kexec/.cache.json
+337 silly addNameRange number 2 { name: 'kexec', range: '>=0.0.3 <0.1.0', hasData: true }
+338 silly addNameRange versions [ 'kexec',
+338 silly addNameRange   [ '0.0.1',
+338 silly addNameRange     '0.0.2',
+338 silly addNameRange     '0.0.3',
+338 silly addNameRange     '0.1.0',
+338 silly addNameRange     '0.1.1',
+338 silly addNameRange     '0.1.2',
+338 silly addNameRange     '0.2.0',
+338 silly addNameRange     '1.0.0',
+338 silly addNameRange     '1.1.0',
+338 silly addNameRange     '1.1.1',
+338 silly addNameRange     '1.2.0',
+338 silly addNameRange     '1.3.0',
+338 silly addNameRange     '2.0.0',
+338 silly addNameRange     '2.0.1',
+338 silly addNameRange     '2.0.2',
+338 silly addNameRange     '3.0.0' ] ]
+339 silly addNamed kexec@0.0.3
+340 verbose addNamed "0.0.3" is a plain semver version for kexec
+341 silly mapToRegistry name kexec
+342 silly mapToRegistry using default registry
+343 silly mapToRegistry registry https://registry.npmjs.org/
+344 silly mapToRegistry uri https://registry.npmjs.org/kexec
+345 verbose addRemoteTarball https://registry.npmjs.org/kexec/-/kexec-0.0.3.tgz not in flight; adding
+346 verbose addRemoteTarball [ 'https://registry.npmjs.org/kexec/-/kexec-0.0.3.tgz',
+346 verbose addRemoteTarball   '5e969f37d61d02b6a36da8016c019ea658032440' ]
+347 silly fetchAndShaCheck shasum 47ac53683daf832bfa952e1774417da47817ae42
+348 info retry fetch attempt 1 at 12:01:35 PM
+349 info attempt registry request try #1 at 12:01:35 PM
+350 http fetch GET https://registry.npmjs.org/kexec/-/kexec-0.0.3.tgz
+351 silly fetchAndShaCheck shasum d7c0fa2af5d5a1a67f4253daee98132e733f0f19
+352 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/underscore/-/underscore-1.3.3.tgz not in flight; adding
+353 verbose addTmpTarball already have metadata; skipping unpack for underscore@1.3.3
+354 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/underscore.string/-/underscore.string-2.2.1.tgz not in flight; adding
+355 verbose addTmpTarball already have metadata; skipping unpack for underscore.string@2.2.1
+356 silly cache afterAdd underscore@1.3.3
+357 verbose afterAdd /home/kcagle/.npm/underscore/1.3.3/package/package.json not in flight; writing
+358 silly cache afterAdd underscore.string@2.2.1
+359 verbose afterAdd /home/kcagle/.npm/underscore.string/2.2.1/package/package.json not in flight; writing
+360 verbose afterAdd /home/kcagle/.npm/underscore/1.3.3/package/package.json written
+361 http fetch 200 https://registry.npmjs.org/regexp-quote/-/regexp-quote-0.0.0.tgz
+362 silly fetchAndShaCheck shasum 1e0f4650c862dcbfed54fd42b148e9bb1721fcf2
+363 verbose afterAdd /home/kcagle/.npm/underscore.string/2.2.1/package/package.json written
+364 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/regexp-quote/-/regexp-quote-0.0.0.tgz not in flight; adding
+365 verbose addTmpTarball already have metadata; skipping unpack for regexp-quote@0.0.0
+366 silly cache afterAdd regexp-quote@0.0.0
+367 verbose afterAdd /home/kcagle/.npm/regexp-quote/0.0.0/package/package.json not in flight; writing
+368 http 200 https://registry.npmjs.org/bcrypt
+369 silly get cb [ 200,
+369 silly get   { server: 'nginx/1.10.3',
+369 silly get     'content-type': 'application/json',
+369 silly get     'last-modified': 'Sat, 01 Jul 2017 16:29:34 GMT',
+369 silly get     etag: 'W/"5957cdee-16ff3"',
+369 silly get     'content-encoding': 'gzip',
+369 silly get     'cache-control': 'max-age=300',
+369 silly get     'content-length': '11309',
+369 silly get     'accept-ranges': 'bytes',
+369 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+369 silly get     via: '1.1 varnish',
+369 silly get     age: '0',
+369 silly get     connection: 'keep-alive',
+369 silly get     'x-served-by': 'cache-lax8629-LAX',
+369 silly get     'x-cache': 'HIT',
+369 silly get     'x-cache-hits': '1',
+369 silly get     'x-timer': 'S1499023098.554733,VS0,VE159',
+369 silly get     vary: 'Accept-Encoding' } ]
+370 verbose get saving bcrypt to /home/kcagle/.npm/registry.npmjs.org/bcrypt/.cache.json
+371 http 200 https://registry.npmjs.org/wood
+372 silly get cb [ 200,
+372 silly get   { server: 'nginx/1.10.1',
+372 silly get     'content-type': 'application/json',
+372 silly get     'last-modified': 'Fri, 04 May 2012 09:50:30 GMT',
+372 silly get     etag: 'W/"4fa3a666-480"',
+372 silly get     'content-encoding': 'gzip',
+372 silly get     'cache-control': 'max-age=300',
+372 silly get     'content-length': '534',
+372 silly get     'accept-ranges': 'bytes',
+372 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+372 silly get     via: '1.1 varnish',
+372 silly get     age: '0',
+372 silly get     connection: 'keep-alive',
+372 silly get     'x-served-by': 'cache-lax8634-LAX',
+372 silly get     'x-cache': 'MISS',
+372 silly get     'x-cache-hits': '0',
+372 silly get     'x-timer': 'S1499023098.554555,VS0,VE163',
+372 silly get     vary: 'Accept-Encoding' } ]
+373 verbose get saving wood to /home/kcagle/.npm/registry.npmjs.org/wood/.cache.json
+374 verbose afterAdd /home/kcagle/.npm/regexp-quote/0.0.0/package/package.json written
+375 silly addNameRange number 2 { name: 'bcrypt', range: '>=0.5.0 <0.6.0', hasData: true }
+376 silly addNameRange versions [ 'bcrypt',
+376 silly addNameRange   [ '0.1.2',
+376 silly addNameRange     '0.2.0',
+376 silly addNameRange     '0.2.1',
+376 silly addNameRange     '0.1.3',
+376 silly addNameRange     '0.2.2',
+376 silly addNameRange     '0.2.3',
+376 silly addNameRange     '0.2.4',
+376 silly addNameRange     '0.3.0',
+376 silly addNameRange     '0.3.1',
+376 silly addNameRange     '0.3.2',
+376 silly addNameRange     '0.4.0',
+376 silly addNameRange     '0.4.1',
+376 silly addNameRange     '0.5.0',
+376 silly addNameRange     '0.6.0',
+376 silly addNameRange     '0.7.0',
+376 silly addNameRange     '0.7.1',
+376 silly addNameRange     '0.7.2',
+376 silly addNameRange     '0.7.3',
+376 silly addNameRange     '0.7.4',
+376 silly addNameRange     '0.7.5',
+376 silly addNameRange     '0.7.6',
+376 silly addNameRange     '0.7.7',
+376 silly addNameRange     '0.7.8',
+376 silly addNameRange     '0.8.0',
+376 silly addNameRange     '0.8.1',
+376 silly addNameRange     '0.8.2',
+376 silly addNameRange     '0.8.3',
+376 silly addNameRange     '0.8.4',
+376 silly addNameRange     '0.8.5',
+376 silly addNameRange     '0.8.6',
+376 silly addNameRange     '0.8.7',
+376 silly addNameRange     '1.0.0',
+376 silly addNameRange     '1.0.1',
+376 silly addNameRange     '1.0.2' ] ]
+377 silly addNamed bcrypt@0.5.0
+378 verbose addNamed "0.5.0" is a plain semver version for bcrypt
+379 silly addNameRange number 2 { name: 'wood', range: '>=0.0.0 <0.1.0', hasData: true }
+380 silly addNameRange versions [ 'wood', [ '0.0.0' ] ]
+381 silly addNamed wood@0.0.0
+382 verbose addNamed "0.0.0" is a plain semver version for wood
+383 silly mapToRegistry name bcrypt
+384 silly mapToRegistry using default registry
+385 silly mapToRegistry registry https://registry.npmjs.org/
+386 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+387 verbose addRemoteTarball https://registry.npmjs.org/bcrypt/-/bcrypt-0.5.0.tgz not in flight; adding
+388 verbose addRemoteTarball [ 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.5.0.tgz',
+388 verbose addRemoteTarball   '612e01afa125c7332310f94e5186425c482b55f8' ]
+389 silly mapToRegistry name wood
+390 silly mapToRegistry using default registry
+391 silly mapToRegistry registry https://registry.npmjs.org/
+392 silly mapToRegistry uri https://registry.npmjs.org/wood
+393 verbose addRemoteTarball https://registry.npmjs.org/wood/-/wood-0.0.0.tgz not in flight; adding
+394 verbose addRemoteTarball [ 'https://registry.npmjs.org/wood/-/wood-0.0.0.tgz',
+394 verbose addRemoteTarball   '8d43dc3d0fcf3d023d20058c5ea680baf2e2dea8' ]
+395 http 200 https://registry.npmjs.org/apply
+396 silly get cb [ 200,
+396 silly get   { server: 'nginx/1.10.3',
+396 silly get     'content-type': 'application/json',
+396 silly get     'last-modified': 'Fri, 04 May 2012 09:40:34 GMT',
+396 silly get     etag: 'W/"4fa3a412-446"',
+396 silly get     'content-encoding': 'gzip',
+396 silly get     'cache-control': 'max-age=300',
+396 silly get     'content-length': '489',
+396 silly get     'accept-ranges': 'bytes',
+396 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+396 silly get     via: '1.1 varnish',
+396 silly get     age: '0',
+396 silly get     connection: 'keep-alive',
+396 silly get     'x-served-by': 'cache-lax8621-LAX',
+396 silly get     'x-cache': 'MISS',
+396 silly get     'x-cache-hits': '0',
+396 silly get     'x-timer': 'S1499023098.555105,VS0,VE183',
+396 silly get     vary: 'Accept-Encoding' } ]
+397 verbose get saving apply to /home/kcagle/.npm/registry.npmjs.org/apply/.cache.json
+398 http 200 https://registry.npmjs.org/jungle
+399 silly get cb [ 200,
+399 silly get   { server: 'nginx/1.10.3',
+399 silly get     'content-type': 'application/json',
+399 silly get     'last-modified': 'Fri, 04 May 2012 09:54:17 GMT',
+399 silly get     etag: 'W/"4fa3a749-44b"',
+399 silly get     'content-encoding': 'gzip',
+399 silly get     'cache-control': 'max-age=300',
+399 silly get     'content-length': '496',
+399 silly get     'accept-ranges': 'bytes',
+399 silly get     date: 'Sun, 02 Jul 2017 19:18:17 GMT',
+399 silly get     via: '1.1 varnish',
+399 silly get     age: '0',
+399 silly get     connection: 'keep-alive',
+399 silly get     'x-served-by': 'cache-lax8650-LAX',
+399 silly get     'x-cache': 'MISS',
+399 silly get     'x-cache-hits': '0',
+399 silly get     'x-timer': 'S1499023098.553517,VS0,VE190',
+399 silly get     vary: 'Accept-Encoding' } ]
+400 verbose get saving jungle to /home/kcagle/.npm/registry.npmjs.org/jungle/.cache.json
+401 info retry fetch attempt 1 at 12:01:35 PM
+402 info attempt registry request try #1 at 12:01:35 PM
+403 http fetch GET https://registry.npmjs.org/wood/-/wood-0.0.0.tgz
+404 info retry fetch attempt 1 at 12:01:35 PM
+405 info attempt registry request try #1 at 12:01:35 PM
+406 http fetch GET https://registry.npmjs.org/bcrypt/-/bcrypt-0.5.0.tgz
+407 silly addNameRange number 2 { name: 'apply', range: '>=0.0.0 <0.1.0', hasData: true }
+408 silly addNameRange versions [ 'apply', [ '0.0.0' ] ]
+409 silly addNamed apply@0.0.0
+410 verbose addNamed "0.0.0" is a plain semver version for apply
+411 silly addNameRange number 2 { name: 'jungle', range: '>=0.0.0 <0.1.0', hasData: true }
+412 silly addNameRange versions [ 'jungle', [ '0.0.0' ] ]
+413 silly addNamed jungle@0.0.0
+414 verbose addNamed "0.0.0" is a plain semver version for jungle
+415 silly mapToRegistry name apply
+416 silly mapToRegistry using default registry
+417 silly mapToRegistry registry https://registry.npmjs.org/
+418 silly mapToRegistry uri https://registry.npmjs.org/apply
+419 verbose addRemoteTarball https://registry.npmjs.org/apply/-/apply-0.0.0.tgz not in flight; adding
+420 verbose addRemoteTarball [ 'https://registry.npmjs.org/apply/-/apply-0.0.0.tgz',
+420 verbose addRemoteTarball   '94ea44fa7bc8cfc53e862ef5d58a9c09323b5688' ]
+421 silly mapToRegistry name jungle
+422 silly mapToRegistry using default registry
+423 silly mapToRegistry registry https://registry.npmjs.org/
+424 silly mapToRegistry uri https://registry.npmjs.org/jungle
+425 verbose addRemoteTarball https://registry.npmjs.org/jungle/-/jungle-0.0.0.tgz not in flight; adding
+426 verbose addRemoteTarball [ 'https://registry.npmjs.org/jungle/-/jungle-0.0.0.tgz',
+426 verbose addRemoteTarball   '697e4aea19970bd063a57d5310f24e584db3b79e' ]
+427 info retry fetch attempt 1 at 12:01:35 PM
+428 info attempt registry request try #1 at 12:01:35 PM
+429 http fetch GET https://registry.npmjs.org/apply/-/apply-0.0.0.tgz
+430 info retry fetch attempt 1 at 12:01:35 PM
+431 info attempt registry request try #1 at 12:01:35 PM
+432 http fetch GET https://registry.npmjs.org/jungle/-/jungle-0.0.0.tgz
+433 http fetch 200 https://registry.npmjs.org/kexec/-/kexec-0.0.3.tgz
+434 silly fetchAndShaCheck shasum 5e969f37d61d02b6a36da8016c019ea658032440
+435 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/kexec/-/kexec-0.0.3.tgz not in flight; adding
+436 verbose addTmpTarball already have metadata; skipping unpack for kexec@0.0.3
+437 silly cache afterAdd kexec@0.0.3
+438 verbose afterAdd /home/kcagle/.npm/kexec/0.0.3/package/package.json not in flight; writing
+439 verbose afterAdd /home/kcagle/.npm/kexec/0.0.3/package/package.json written
+440 http fetch 200 https://registry.npmjs.org/step/-/step-0.0.6.tgz
+441 silly fetchAndShaCheck shasum 143e7849a5d7d3f4a088fe29af94915216eeede2
+442 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/step/-/step-0.0.6.tgz not in flight; adding
+443 verbose addTmpTarball already have metadata; skipping unpack for step@0.0.6
+444 silly cache afterAdd step@0.0.6
+445 verbose afterAdd /home/kcagle/.npm/step/0.0.6/package/package.json not in flight; writing
+446 verbose afterAdd /home/kcagle/.npm/step/0.0.6/package/package.json written
+447 http fetch 200 https://registry.npmjs.org/wood/-/wood-0.0.0.tgz
+448 silly fetchAndShaCheck shasum 8d43dc3d0fcf3d023d20058c5ea680baf2e2dea8
+449 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/wood/-/wood-0.0.0.tgz not in flight; adding
+450 verbose addTmpTarball already have metadata; skipping unpack for wood@0.0.0
+451 http fetch 200 https://registry.npmjs.org/apply/-/apply-0.0.0.tgz
+452 silly fetchAndShaCheck shasum 94ea44fa7bc8cfc53e862ef5d58a9c09323b5688
+453 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/apply/-/apply-0.0.0.tgz not in flight; adding
+454 verbose addTmpTarball already have metadata; skipping unpack for apply@0.0.0
+455 silly cache afterAdd wood@0.0.0
+456 verbose afterAdd /home/kcagle/.npm/wood/0.0.0/package/package.json not in flight; writing
+457 verbose afterAdd /home/kcagle/.npm/wood/0.0.0/package/package.json written
+458 silly cache afterAdd apply@0.0.0
+459 verbose afterAdd /home/kcagle/.npm/apply/0.0.0/package/package.json not in flight; writing
+460 verbose afterAdd /home/kcagle/.npm/apply/0.0.0/package/package.json written
+461 verbose mirrorRemote git://github.com/dbrock/node-main.git git clone git://github.com/dbrock/node-main.git
+462 verbose setPermissions git://github.com/dbrock/node-main.git set permissions on /home/kcagle/.npm/_git-remotes/git-github-com-dbrock-node-main-git-2ccd6cb7
+463 verbose resolveHead git://github.com/dbrock/node-main.git original treeish: master
+464 info git [ 'rev-list', '-n1', 'master' ]
+465 silly resolveHead git://github.com/dbrock/node-main.git resolved treeish: eb01d96b3e67932359e71458e473764bf0ccd425
+466 verbose resolveHead git://github.com/dbrock/node-main.git resolved Git URL: git://github.com/dbrock/node-main.git#eb01d96b3e67932359e71458e473764bf0ccd425
+467 silly resolveHead Git working directory: /tmp/npm-29835-95a58096/git-cache-8c881ea1be1a/eb01d96b3e67932359e71458e473764bf0ccd425
+468 info git [ 'clone',
+468 info git   '/home/kcagle/.npm/_git-remotes/git-github-com-dbrock-node-main-git-2ccd6cb7',
+468 info git   '/tmp/npm-29835-95a58096/git-cache-8c881ea1be1a/eb01d96b3e67932359e71458e473764bf0ccd425' ]
+469 verbose cloneResolved git://github.com/dbrock/node-main.git clone Cloning into '/tmp/npm-29835-95a58096/git-cache-8c881ea1be1a/eb01d96b3e67932359e71458e473764bf0ccd425'...
+469 verbose cloneResolved done.
+470 info git [ 'checkout', 'eb01d96b3e67932359e71458e473764bf0ccd425' ]
+471 verbose checkoutTreeish git://github.com/dbrock/node-main.git checkout Note: checking out 'eb01d96b3e67932359e71458e473764bf0ccd425'.
+471 verbose checkoutTreeish
+471 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+471 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+471 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+471 verbose checkoutTreeish
+471 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+471 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+471 verbose checkoutTreeish
+471 verbose checkoutTreeish   git checkout -b new_branch_name
+471 verbose checkoutTreeish
+471 verbose checkoutTreeish HEAD is now at eb01d96... Initial import.
+472 verbose addLocalDirectory /home/kcagle/.npm/main/0.0.0/package.tgz not in flight; packing
+473 verbose tar pack [ '/home/kcagle/.npm/main/0.0.0/package.tgz',
+473 verbose tar pack   '/tmp/npm-29835-95a58096/git-cache-8c881ea1be1a/eb01d96b3e67932359e71458e473764bf0ccd425' ]
+474 verbose tarball /home/kcagle/.npm/main/0.0.0/package.tgz
+475 verbose folder /tmp/npm-29835-95a58096/git-cache-8c881ea1be1a/eb01d96b3e67932359e71458e473764bf0ccd425
+476 verbose addLocalTarball adding from inside cache /home/kcagle/.npm/main/0.0.0/package.tgz
+477 verbose addRemoteGit data._from: git://github.com/dbrock/node-main.git
+478 verbose addRemoteGit data._resolved: git://github.com/dbrock/node-main.git#eb01d96b3e67932359e71458e473764bf0ccd425
+479 silly cache afterAdd main@0.0.0
+480 verbose afterAdd /home/kcagle/.npm/main/0.0.0/package/package.json not in flight; writing
+481 verbose afterAdd /home/kcagle/.npm/main/0.0.0/package/package.json written
+482 http fetch 200 https://registry.npmjs.org/jungle/-/jungle-0.0.0.tgz
+483 silly fetchAndShaCheck shasum 697e4aea19970bd063a57d5310f24e584db3b79e
+484 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/jungle/-/jungle-0.0.0.tgz not in flight; adding
+485 verbose addTmpTarball already have metadata; skipping unpack for jungle@0.0.0
+486 silly cache afterAdd jungle@0.0.0
+487 verbose afterAdd /home/kcagle/.npm/jungle/0.0.0/package/package.json not in flight; writing
+488 verbose afterAdd /home/kcagle/.npm/jungle/0.0.0/package/package.json written
+489 http fetch 200 https://registry.npmjs.org/bcrypt/-/bcrypt-0.5.0.tgz
+490 silly fetchAndShaCheck shasum 612e01afa125c7332310f94e5186425c482b55f8
+491 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/bcrypt/-/bcrypt-0.5.0.tgz not in flight; adding
+492 verbose addTmpTarball already have metadata; skipping unpack for bcrypt@0.5.0
+493 silly cache afterAdd bcrypt@0.5.0
+494 verbose afterAdd /home/kcagle/.npm/bcrypt/0.5.0/package/package.json not in flight; writing
+495 verbose afterAdd /home/kcagle/.npm/bcrypt/0.5.0/package/package.json written
+496 silly install resolved [ { name: 'colors',
+496 silly install resolved     description: 'get colors in your node.js console like what',
+496 silly install resolved     version: '0.6.2',
+496 silly install resolved     author: { name: 'Marak Squires' },
+496 silly install resolved     homepage: 'https://github.com/Marak/colors.js',
+496 silly install resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+496 silly install resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+496 silly install resolved     repository: { type: 'git', url: 'http://github.com/Marak/colors.js.git' },
+496 silly install resolved     engines: { node: '>=0.1.90' },
+496 silly install resolved     main: 'colors',
+496 silly install resolved     _id: 'colors@0.6.2',
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+496 silly install resolved     _from: 'colors@>=0.6.0 <0.7.0',
+496 silly install resolved     _npmVersion: '1.2.30',
+496 silly install resolved     _npmUser: { name: 'marak', email: 'marak.squires@gmail.com' },
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+496 silly install resolved   { name: 'underscore',
+496 silly install resolved     description: 'JavaScript\'s functional programming helper library.',
+496 silly install resolved     homepage: 'http://documentcloud.github.com/underscore/',
+496 silly install resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+496 silly install resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+496 silly install resolved     repository:
+496 silly install resolved      { type: 'git',
+496 silly install resolved        url: 'git://github.com/documentcloud/underscore.git' },
+496 silly install resolved     main: 'underscore.js',
+496 silly install resolved     version: '1.3.3',
+496 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+496 silly install resolved     _id: 'underscore@1.3.3',
+496 silly install resolved     dependencies: {},
+496 silly install resolved     devDependencies: {},
+496 silly install resolved     optionalDependencies: {},
+496 silly install resolved     engines: { node: '*' },
+496 silly install resolved     _engineSupported: true,
+496 silly install resolved     _npmVersion: '1.1.1',
+496 silly install resolved     _nodeVersion: 'v0.6.11',
+496 silly install resolved     _defaultsLoaded: true,
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '47ac53683daf832bfa952e1774417da47817ae42',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz' },
+496 silly install resolved     maintainers: [ [Object], [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '47ac53683daf832bfa952e1774417da47817ae42',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.3.3.tgz',
+496 silly install resolved     _from: 'underscore@>=1.3.3 <1.4.0' },
+496 silly install resolved   { name: 'underscore.string',
+496 silly install resolved     version: '2.2.1',
+496 silly install resolved     description: 'String manipulation extensions for Underscore.js javascript library.',
+496 silly install resolved     homepage: 'http://epeli.github.com/underscore.string/',
+496 silly install resolved     contributors:
+496 silly install resolved      [ [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object] ],
+496 silly install resolved     keywords: [ 'underscore', 'string' ],
+496 silly install resolved     main: './lib/underscore.string',
+496 silly install resolved     directories: { lib: './lib' },
+496 silly install resolved     engines: { node: '*' },
+496 silly install resolved     repository:
+496 silly install resolved      { type: 'git',
+496 silly install resolved        url: 'https://github.com/epeli/underscore.string.git' },
+496 silly install resolved     bugs: { url: 'https://github.com/epeli/underscore.string/issues' },
+496 silly install resolved     licenses: [ [Object] ],
+496 silly install resolved     _id: 'underscore.string@2.2.1',
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: 'd7c0fa2af5d5a1a67f4253daee98132e733f0f19',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/underscore.string/-/underscore.string-2.2.1.tgz' },
+496 silly install resolved     _from: 'underscore.string@>=2.2.0 <2.3.0',
+496 silly install resolved     _npmVersion: '1.2.32',
+496 silly install resolved     _npmUser: { name: 'epeli', email: 'esa-matti@suuronen.org' },
+496 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+496 silly install resolved     _shasum: 'd7c0fa2af5d5a1a67f4253daee98132e733f0f19',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore.string/-/underscore.string-2.2.1.tgz' },
+496 silly install resolved   { author: { name: 'Daniel Brockman', email: '@dbrock' },
+496 silly install resolved     name: 'regexp-quote',
+496 silly install resolved     description: 'RegExp.quote = require(\'regexp-quote\')',
+496 silly install resolved     version: '0.0.0',
+496 silly install resolved     homepage: 'https://github.com/dbrock/node-regexp-quote',
+496 silly install resolved     repository: { url: 'git://github.com/dbrock/node-regexp-quote.git' },
+496 silly install resolved     main: 'regexp-quote.js',
+496 silly install resolved     scripts: { test: 'node test.js' },
+496 silly install resolved     dependencies: {},
+496 silly install resolved     devDependencies: {},
+496 silly install resolved     optionalDependencies: {},
+496 silly install resolved     engines: { node: '*' },
+496 silly install resolved     _npmUser: { name: 'dbrock', email: 'daniel@brockman.se' },
+496 silly install resolved     _id: 'regexp-quote@0.0.0',
+496 silly install resolved     _engineSupported: true,
+496 silly install resolved     _npmVersion: '1.1.18',
+496 silly install resolved     _nodeVersion: 'v0.6.15',
+496 silly install resolved     _defaultsLoaded: true,
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '1e0f4650c862dcbfed54fd42b148e9bb1721fcf2',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/regexp-quote/-/regexp-quote-0.0.0.tgz' },
+496 silly install resolved     readme: '',
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '1e0f4650c862dcbfed54fd42b148e9bb1721fcf2',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/regexp-quote/-/regexp-quote-0.0.0.tgz',
+496 silly install resolved     _from: 'regexp-quote@>=0.0.0 <0.1.0' },
+496 silly install resolved   { name: 'kexec',
+496 silly install resolved     version: '0.0.3',
+496 silly install resolved     description: 'Replace your Node.js process with another process. Like Ruby exec.',
+496 silly install resolved     homepage: [ 'https://github.com/jprichardson/node-kexec' ],
+496 silly install resolved     repository:
+496 silly install resolved      { type: 'git',
+496 silly install resolved        url: 'git://github.com/jprichardson/node-kexec.git' },
+496 silly install resolved     keywords: [ 'exec', 'spawn', 'process' ],
+496 silly install resolved     author: { name: 'JP Richardson', email: 'jprichardson@gmail.com' },
+496 silly install resolved     licenses: [ [Object] ],
+496 silly install resolved     main: './index',
+496 silly install resolved     engines: { node: '>=0.4' },
+496 silly install resolved     scripts: { install: 'node-waf configure build' },
+496 silly install resolved     _npmUser: { name: 'jp', email: 'jprichardson@gmail.com' },
+496 silly install resolved     _id: 'kexec@0.0.3',
+496 silly install resolved     dependencies: {},
+496 silly install resolved     devDependencies: {},
+496 silly install resolved     _engineSupported: true,
+496 silly install resolved     _npmVersion: '1.1.0-alpha-6',
+496 silly install resolved     _nodeVersion: 'v0.6.5',
+496 silly install resolved     _defaultsLoaded: true,
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '5e969f37d61d02b6a36da8016c019ea658032440',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/kexec/-/kexec-0.0.3.tgz' },
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '5e969f37d61d02b6a36da8016c019ea658032440',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/kexec/-/kexec-0.0.3.tgz',
+496 silly install resolved     _from: 'kexec@>=0.0.3 <0.1.0' },
+496 silly install resolved   { name: 'step',
+496 silly install resolved     version: '0.0.6',
+496 silly install resolved     description: 'A simple control-flow library for node.JS that makes parallel execution, serial execution, and error handling painless.',
+496 silly install resolved     engine: [ 'node >=0.2.0' ],
+496 silly install resolved     author: { name: 'Tim Caswell', email: 'tim@creationix.com' },
+496 silly install resolved     license: 'MIT',
+496 silly install resolved     repository:
+496 silly install resolved      { type: 'git',
+496 silly install resolved        url: 'git+ssh://git@github.com/creationix/step.git' },
+496 silly install resolved     main: 'lib/step',
+496 silly install resolved     gitHead: '11c5a85aa2d6f016ec8eee16d9817f3798d8ee43',
+496 silly install resolved     bugs: { url: 'https://github.com/creationix/step/issues' },
+496 silly install resolved     homepage: 'https://github.com/creationix/step#readme',
+496 silly install resolved     _id: 'step@0.0.6',
+496 silly install resolved     scripts: {},
+496 silly install resolved     _shasum: '143e7849a5d7d3f4a088fe29af94915216eeede2',
+496 silly install resolved     _from: 'step@>=0.0.5 <0.1.0',
+496 silly install resolved     _npmVersion: '2.9.0',
+496 silly install resolved     _nodeVersion: '2.0.1',
+496 silly install resolved     _npmUser: { name: 'creationix', email: 'tim@creationix.com' },
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '143e7849a5d7d3f4a088fe29af94915216eeede2',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/step/-/step-0.0.6.tgz' },
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/step/-/step-0.0.6.tgz' },
+496 silly install resolved   { author: { name: 'Daniel Brockman', email: '@dbrock' },
+496 silly install resolved     name: 'wood',
+496 silly install resolved     description: 'Logging library',
+496 silly install resolved     version: '0.0.0',
+496 silly install resolved     main: 'wood.js',
+496 silly install resolved     dependencies:
+496 silly install resolved      { apply: '~0.0.0',
+496 silly install resolved        callsite: '~0.0.2',
+496 silly install resolved        colors: '~0.6',
+496 silly install resolved        main: 'git://github.com/dbrock/node-main.git',
+496 silly install resolved        underscore: '~1.3' },
+496 silly install resolved     devDependencies: {},
+496 silly install resolved     optionalDependencies: {},
+496 silly install resolved     engines: { node: '*' },
+496 silly install resolved     _npmUser: { name: 'dbrock', email: 'daniel@brockman.se' },
+496 silly install resolved     _id: 'wood@0.0.0',
+496 silly install resolved     _engineSupported: true,
+496 silly install resolved     _npmVersion: '1.1.18',
+496 silly install resolved     _nodeVersion: 'v0.6.15',
+496 silly install resolved     _defaultsLoaded: true,
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '8d43dc3d0fcf3d023d20058c5ea680baf2e2dea8',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/wood/-/wood-0.0.0.tgz' },
+496 silly install resolved     readme: '',
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '8d43dc3d0fcf3d023d20058c5ea680baf2e2dea8',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/wood/-/wood-0.0.0.tgz',
+496 silly install resolved     _from: 'wood@>=0.0.0 <0.1.0' },
+496 silly install resolved   { author: { name: 'Daniel Brockman', email: '@dbrock' },
+496 silly install resolved     name: 'apply',
+496 silly install resolved     description: 'Better version of Function.prototype.apply',
+496 silly install resolved     version: '0.0.0',
+496 silly install resolved     main: 'apply.js',
+496 silly install resolved     dependencies: {},
+496 silly install resolved     devDependencies: {},
+496 silly install resolved     optionalDependencies: {},
+496 silly install resolved     engines: { node: '*' },
+496 silly install resolved     _npmUser: { name: 'dbrock', email: 'daniel@brockman.se' },
+496 silly install resolved     _id: 'apply@0.0.0',
+496 silly install resolved     _engineSupported: true,
+496 silly install resolved     _npmVersion: '1.1.18',
+496 silly install resolved     _nodeVersion: 'v0.6.15',
+496 silly install resolved     _defaultsLoaded: true,
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '94ea44fa7bc8cfc53e862ef5d58a9c09323b5688',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/apply/-/apply-0.0.0.tgz' },
+496 silly install resolved     readme: '',
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '94ea44fa7bc8cfc53e862ef5d58a9c09323b5688',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/apply/-/apply-0.0.0.tgz',
+496 silly install resolved     _from: 'apply@>=0.0.0 <0.1.0' },
+496 silly install resolved   { author: { name: 'Daniel Brockman', email: '@dbrock' },
+496 silly install resolved     name: 'main',
+496 silly install resolved     description: 'Composable main() functions for Node.js',
+496 silly install resolved     version: '0.0.0',
+496 silly install resolved     main: 'main.js',
+496 silly install resolved     dependencies: {},
+496 silly install resolved     devDependencies: {},
+496 silly install resolved     optionalDependencies: {},
+496 silly install resolved     engines: { node: '*' },
+496 silly install resolved     gitHead: 'eb01d96b3e67932359e71458e473764bf0ccd425',
+496 silly install resolved     readme: 'ERROR: No README data found!',
+496 silly install resolved     _id: 'main@0.0.0',
+496 silly install resolved     _shasum: 'ce0cfb56ef4bfea62aece39e2c3983b760888dbd',
+496 silly install resolved     _from: 'git://github.com/dbrock/node-main.git',
+496 silly install resolved     _resolved: 'git://github.com/dbrock/node-main.git#eb01d96b3e67932359e71458e473764bf0ccd425' },
+496 silly install resolved   { author: { name: 'Daniel Brockman', email: '@dbrock' },
+496 silly install resolved     name: 'jungle',
+496 silly install resolved     description: 'Read environment variables in a fancy way',
+496 silly install resolved     version: '0.0.0',
+496 silly install resolved     main: 'jungle.js',
+496 silly install resolved     dependencies: {},
+496 silly install resolved     devDependencies: {},
+496 silly install resolved     optionalDependencies: {},
+496 silly install resolved     engines: { node: '*' },
+496 silly install resolved     _npmUser: { name: 'dbrock', email: 'daniel@brockman.se' },
+496 silly install resolved     _id: 'jungle@0.0.0',
+496 silly install resolved     _engineSupported: true,
+496 silly install resolved     _npmVersion: '1.1.18',
+496 silly install resolved     _nodeVersion: 'v0.6.15',
+496 silly install resolved     _defaultsLoaded: true,
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '697e4aea19970bd063a57d5310f24e584db3b79e',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/jungle/-/jungle-0.0.0.tgz' },
+496 silly install resolved     readme: '',
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '697e4aea19970bd063a57d5310f24e584db3b79e',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/jungle/-/jungle-0.0.0.tgz',
+496 silly install resolved     _from: 'jungle@>=0.0.0 <0.1.0' },
+496 silly install resolved   { name: 'bcrypt',
+496 silly install resolved     description: 'A bcrypt library for NodeJS.',
+496 silly install resolved     keywords:
+496 silly install resolved      [ 'bcrypt',
+496 silly install resolved        'password',
+496 silly install resolved        'auth',
+496 silly install resolved        'authentication',
+496 silly install resolved        'encryption',
+496 silly install resolved        'crypt',
+496 silly install resolved        'crypto' ],
+496 silly install resolved     main: './bcrypt',
+496 silly install resolved     version: '0.5.0',
+496 silly install resolved     author: { name: 'Nick Campbell', url: 'http://github.com/ncb000gt' },
+496 silly install resolved     engines: { node: '>= 0.6.0' },
+496 silly install resolved     repository:
+496 silly install resolved      { type: 'git',
+496 silly install resolved        url: 'git://github.com/ncb000gt/node.bcrypt.js.git' },
+496 silly install resolved     licenses: [ [Object] ],
+496 silly install resolved     bugs: { url: 'http://github.com/ncb000gt/node.bcrypt.js/issues' },
+496 silly install resolved     scripts: { install: 'make build', test: 'make test' },
+496 silly install resolved     devDependencies: { nodeunit: '>=0.6.4' },
+496 silly install resolved     contributors:
+496 silly install resolved      [ [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object],
+496 silly install resolved        [Object] ],
+496 silly install resolved     _npmUser: { name: 'ncb000gt', email: 'nicholas.j.campbell@gmail.com' },
+496 silly install resolved     _id: 'bcrypt@0.5.0',
+496 silly install resolved     dependencies: {},
+496 silly install resolved     _engineSupported: true,
+496 silly install resolved     _npmVersion: '1.1.0-beta-10',
+496 silly install resolved     _nodeVersion: 'v0.6.7',
+496 silly install resolved     _defaultsLoaded: true,
+496 silly install resolved     dist:
+496 silly install resolved      { shasum: '612e01afa125c7332310f94e5186425c482b55f8',
+496 silly install resolved        tarball: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.5.0.tgz' },
+496 silly install resolved     maintainers: [ [Object] ],
+496 silly install resolved     directories: {},
+496 silly install resolved     _shasum: '612e01afa125c7332310f94e5186425c482b55f8',
+496 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.5.0.tgz',
+496 silly install resolved     _from: 'bcrypt@>=0.5.0 <0.6.0' } ]
+497 info install colors@0.6.2 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+498 info install underscore@1.3.3 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+499 info install underscore.string@2.2.1 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+500 info install regexp-quote@0.0.0 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+501 info install kexec@0.0.3 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+502 info install step@0.0.6 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+503 info install wood@0.0.0 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+504 info install apply@0.0.0 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+505 info install main@0.0.0 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+506 info install jungle@0.0.0 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+507 info install bcrypt@0.5.0 into /home/kcagle/nodeapps/mindr/node_modules/pouch
+508 info installOne colors@0.6.2
+509 verbose installOne of colors to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+510 info installOne underscore@1.3.3
+511 verbose installOne of underscore to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+512 info installOne underscore.string@2.2.1
+513 verbose installOne of underscore.string to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+514 info installOne regexp-quote@0.0.0
+515 verbose installOne of regexp-quote to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+516 info installOne kexec@0.0.3
+517 verbose installOne of kexec to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+518 info installOne step@0.0.6
+519 verbose installOne of step to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+520 info installOne wood@0.0.0
+521 verbose installOne of wood to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+522 info installOne apply@0.0.0
+523 verbose installOne of apply to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+524 info installOne main@0.0.0
+525 verbose installOne of main to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+526 info installOne jungle@0.0.0
+527 verbose installOne of jungle to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+528 info installOne bcrypt@0.5.0
+529 verbose installOne of bcrypt to /home/kcagle/nodeapps/mindr/node_modules/pouch not in flight; installing
+530 verbose lock using /home/kcagle/.npm/_locks/colors-f42531fa9b8dc3ee.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+531 verbose lock using /home/kcagle/.npm/_locks/underscore-2480e07285d3f5a5.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+532 verbose lock using /home/kcagle/.npm/_locks/underscore-string-ec3ee9f8b8f71885.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+533 verbose lock using /home/kcagle/.npm/_locks/regexp-quote-e638c04405333a68.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+534 verbose lock using /home/kcagle/.npm/_locks/kexec-9acc282f420745a7.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+535 verbose lock using /home/kcagle/.npm/_locks/step-a172822de8cf8847.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+536 verbose lock using /home/kcagle/.npm/_locks/wood-e41a29d38bc59520.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+537 verbose lock using /home/kcagle/.npm/_locks/apply-a14c9847c8a8b767.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+538 verbose lock using /home/kcagle/.npm/_locks/main-27f6e0746bf227f6.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+539 verbose lock using /home/kcagle/.npm/_locks/jungle-81d5cde2d29c31f9.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+540 verbose lock using /home/kcagle/.npm/_locks/bcrypt-4ce89505299c6b0a.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+541 silly install write writing colors 0.6.2 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+542 silly install write writing underscore 1.3.3 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+543 silly install write writing underscore.string 2.2.1 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+544 silly install write writing regexp-quote 0.0.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+545 silly install write writing kexec 0.0.3 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+546 silly install write writing step 0.0.6 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+547 silly install write writing wood 0.0.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+548 silly install write writing apply 0.0.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+549 silly install write writing main 0.0.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+550 silly install write writing jungle 0.0.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+551 silly install write writing bcrypt 0.5.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+552 verbose unbuild node_modules/pouch/node_modules/colors
+553 verbose unbuild node_modules/pouch/node_modules/underscore
+554 verbose unbuild node_modules/pouch/node_modules/underscore.string
+555 verbose unbuild node_modules/pouch/node_modules/regexp-quote
+556 verbose unbuild node_modules/pouch/node_modules/kexec
+557 verbose unbuild node_modules/pouch/node_modules/step
+558 verbose unbuild node_modules/pouch/node_modules/wood
+559 verbose unbuild node_modules/pouch/node_modules/apply
+560 verbose unbuild node_modules/pouch/node_modules/main
+561 verbose unbuild node_modules/pouch/node_modules/jungle
+562 verbose unbuild node_modules/pouch/node_modules/bcrypt
+563 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors is being purged from base /home/kcagle/nodeapps/mindr
+564 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+565 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore is being purged from base /home/kcagle/nodeapps/mindr
+566 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+567 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string is being purged from base /home/kcagle/nodeapps/mindr
+568 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+569 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote is being purged from base /home/kcagle/nodeapps/mindr
+570 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+571 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec is being purged from base /home/kcagle/nodeapps/mindr
+572 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+573 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step is being purged from base /home/kcagle/nodeapps/mindr
+574 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+575 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood is being purged from base /home/kcagle/nodeapps/mindr
+576 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+577 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply is being purged from base /home/kcagle/nodeapps/mindr
+578 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+579 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main is being purged from base /home/kcagle/nodeapps/mindr
+580 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+581 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle is being purged from base /home/kcagle/nodeapps/mindr
+582 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+583 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt is being purged from base /home/kcagle/nodeapps/mindr
+584 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+585 verbose tar unpack /home/kcagle/.npm/colors/0.6.2/package.tgz
+586 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+587 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors is being purged
+588 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+589 verbose tar unpack /home/kcagle/.npm/underscore/1.3.3/package.tgz
+590 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+591 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore is being purged
+592 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+593 verbose tar unpack /home/kcagle/.npm/underscore.string/2.2.1/package.tgz
+594 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+595 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string is being purged
+596 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+597 verbose tar unpack /home/kcagle/.npm/regexp-quote/0.0.0/package.tgz
+598 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+599 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote is being purged
+600 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+601 verbose tar unpack /home/kcagle/.npm/kexec/0.0.3/package.tgz
+602 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+603 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec is being purged
+604 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+605 verbose tar unpack /home/kcagle/.npm/step/0.0.6/package.tgz
+606 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+607 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step is being purged
+608 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+609 verbose tar unpack /home/kcagle/.npm/wood/0.0.0/package.tgz
+610 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+611 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood is being purged
+612 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+613 verbose tar unpack /home/kcagle/.npm/apply/0.0.0/package.tgz
+614 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+615 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply is being purged
+616 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+617 verbose tar unpack /home/kcagle/.npm/main/0.0.0/package.tgz
+618 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+619 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main is being purged
+620 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+621 verbose tar unpack /home/kcagle/.npm/jungle/0.0.0/package.tgz
+622 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+623 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle is being purged
+624 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+625 verbose tar unpack /home/kcagle/.npm/bcrypt/0.5.0/package.tgz
+626 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+627 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt is being purged
+628 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+629 silly gunzTarPerm modes [ '775', '664' ]
+630 silly gunzTarPerm modes [ '775', '664' ]
+631 silly gunzTarPerm modes [ '775', '664' ]
+632 silly gunzTarPerm modes [ '775', '664' ]
+633 silly gunzTarPerm modes [ '775', '664' ]
+634 silly gunzTarPerm modes [ '775', '664' ]
+635 silly gunzTarPerm modes [ '775', '664' ]
+636 silly gunzTarPerm modes [ '775', '664' ]
+637 silly gunzTarPerm modes [ '775', '664' ]
+638 silly gunzTarPerm modes [ '775', '664' ]
+639 silly gunzTarPerm modes [ '775', '664' ]
+640 silly gunzTarPerm extractEntry package.json
+641 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+642 silly gunzTarPerm extractEntry .npmignore
+643 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+644 silly gunzTarPerm extractEntry package.json
+645 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+646 silly gunzTarPerm extractEntry package.json
+647 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+648 silly gunzTarPerm extractEntry .gitignore
+649 silly gunzTarPerm modified mode [ '.gitignore', 420, 436 ]
+650 silly gunzTarPerm extractEntry package.json
+651 silly gunzTarPerm extractEntry package.json
+652 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+653 silly gunzTarPerm extractEntry package.json
+654 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+655 silly gunzTarPerm extractEntry package.json
+656 silly gunzTarPerm extractEntry package.json
+657 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+658 silly gunzTarPerm extractEntry README.md
+659 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+660 silly gunzTarPerm extractEntry colors.js
+661 silly gunzTarPerm modified mode [ 'colors.js', 420, 436 ]
+662 silly gunzTarPerm extractEntry example.js
+663 silly gunzTarPerm modified mode [ 'example.js', 420, 436 ]
+664 silly gunzTarPerm extractEntry CNAME
+665 silly gunzTarPerm modified mode [ 'CNAME', 420, 436 ]
+666 silly gunzTarPerm extractEntry favicon.ico
+667 silly gunzTarPerm modified mode [ 'favicon.ico', 493, 509 ]
+668 silly gunzTarPerm extractEntry .travis.yml
+669 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+670 silly gunzTarPerm extractEntry Gemfile
+671 silly gunzTarPerm modified mode [ 'Gemfile', 420, 436 ]
+672 silly gunzTarPerm extractEntry README
+673 silly gunzTarPerm modified mode [ 'README', 420, 436 ]
+674 silly gunzTarPerm extractEntry regexp-quote.js
+675 silly gunzTarPerm modified mode [ 'regexp-quote.js', 420, 436 ]
+676 silly gunzTarPerm extractEntry demo/
+677 silly gunzTarPerm modified mode [ 'demo/', 493, 509 ]
+678 silly gunzTarPerm extractEntry demo/demo.js
+679 silly gunzTarPerm modified mode [ 'demo/demo.js', 420, 436 ]
+680 silly gunzTarPerm extractEntry README.markdown
+681 silly gunzTarPerm extractEntry lib/step.js
+682 silly gunzTarPerm extractEntry wood.js
+683 silly gunzTarPerm modified mode [ 'wood.js', 420, 436 ]
+684 silly gunzTarPerm extractEntry apply.js
+685 silly gunzTarPerm modified mode [ 'apply.js', 420, 436 ]
+686 silly gunzTarPerm extractEntry .npmignore
+687 silly gunzTarPerm extractEntry main.js
+688 silly gunzTarPerm extractEntry jungle.js
+689 silly gunzTarPerm modified mode [ 'jungle.js', 420, 436 ]
+690 silly gunzTarPerm extractEntry test/
+691 silly gunzTarPerm modified mode [ 'test/', 493, 509 ]
+692 silly gunzTarPerm extractEntry test/async.js
+693 silly gunzTarPerm modified mode [ 'test/async.js', 420, 436 ]
+694 silly gunzTarPerm extractEntry test.js
+695 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+696 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+697 silly gunzTarPerm modified mode [ 'MIT-LICENSE.txt', 420, 436 ]
+698 silly gunzTarPerm extractEntry ReadMe.md
+699 silly gunzTarPerm modified mode [ 'ReadMe.md', 420, 436 ]
+700 silly gunzTarPerm extractEntry example.html
+701 silly gunzTarPerm modified mode [ 'example.html', 420, 436 ]
+702 silly gunzTarPerm extractEntry themes/winston-dark.js
+703 silly gunzTarPerm modified mode [ 'themes/winston-dark.js', 420, 436 ]
+704 silly gunzTarPerm extractEntry themes/winston-light.js
+705 silly gunzTarPerm modified mode [ 'themes/winston-light.js', 420, 436 ]
+706 silly gunzTarPerm extractEntry index.html
+707 silly gunzTarPerm modified mode [ 'index.html', 420, 436 ]
+708 silly gunzTarPerm extractEntry index.js
+709 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+710 silly gunzTarPerm extractEntry test.js
+711 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+712 silly gunzTarPerm extractEntry HISTORY.asciidoc
+713 silly gunzTarPerm modified mode [ 'HISTORY.asciidoc', 420, 436 ]
+714 silly gunzTarPerm extractEntry index.js
+715 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+716 silly gunzTarPerm extractEntry LICENSE
+717 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+718 silly gunzTarPerm extractEntry license.txt
+719 silly gunzTarPerm extractEntry test/callbackTest.js
+720 silly gunzTarPerm extractEntry Gemfile.lock
+721 silly gunzTarPerm modified mode [ 'Gemfile.lock', 420, 436 ]
+722 silly gunzTarPerm extractEntry README.markdown
+723 silly gunzTarPerm modified mode [ 'README.markdown', 420, 436 ]
+724 silly gunzTarPerm extractEntry package.json
+725 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+726 silly gunzTarPerm extractEntry README.asciidoc
+727 silly gunzTarPerm modified mode [ 'README.asciidoc', 420, 436 ]
+728 silly gunzTarPerm extractEntry LICENSE
+729 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+730 silly gunzTarPerm extractEntry package.json
+731 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+732 silly gunzTarPerm extractEntry Rakefile
+733 silly gunzTarPerm modified mode [ 'Rakefile', 420, 436 ]
+734 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply/package.json
+735 silly gunzTarPerm extractEntry test/errorTest.js
+736 silly gunzTarPerm extractEntry test/fnTest.js
+737 silly gunzTarPerm extractEntry test/deprecated.js
+738 silly gunzTarPerm modified mode [ 'test/deprecated.js', 420, 436 ]
+739 silly gunzTarPerm extractEntry test/repetitions.js
+740 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 436 ]
+741 silly gunzTarPerm extractEntry test/sync.js
+742 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 436 ]
+743 silly gunzTarPerm extractEntry package.json
+744 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+745 silly gunzTarPerm extractEntry CHANGELOG
+746 silly gunzTarPerm modified mode [ 'CHANGELOG', 420, 436 ]
+747 silly gunzTarPerm extractEntry Makefile
+748 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+749 silly gunzTarPerm extractEntry examples/
+750 silly gunzTarPerm modified mode [ 'examples/', 493, 509 ]
+751 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+752 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 436 ]
+753 silly gunzTarPerm extractEntry examples/async_compare.js
+754 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 436 ]
+755 silly gunzTarPerm extractEntry LICENSE
+756 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+757 silly gunzTarPerm extractEntry src/
+758 silly gunzTarPerm modified mode [ 'src/', 493, 509 ]
+759 silly gunzTarPerm extractEntry src/bcrypt.cc
+760 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 436 ]
+761 silly gunzTarPerm extractEntry src/node_blf.h
+762 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 436 ]
+763 silly gunzTarPerm extractEntry src/blowfish.cc
+764 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 436 ]
+765 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+766 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 436 ]
+767 silly gunzTarPerm extractEntry .travis.yml
+768 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+769 silly gunzTarPerm extractEntry wscript
+770 silly gunzTarPerm modified mode [ 'wscript', 420, 436 ]
+771 silly gunzTarPerm extractEntry bcrypt.js
+772 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 436 ]
+773 silly gunzTarPerm extractEntry .npmignore
+774 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+775 silly gunzTarPerm extractEntry src/
+776 silly gunzTarPerm modified mode [ 'src/', 493, 509 ]
+777 silly gunzTarPerm extractEntry src/node_kexec.cpp
+778 silly gunzTarPerm modified mode [ 'src/node_kexec.cpp', 420, 436 ]
+779 info preinstall apply@0.0.0
+780 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle/package.json
+781 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply/package.json
+782 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/package.json
+783 silly gunzTarPerm extractEntry raw/
+784 silly gunzTarPerm modified mode [ 'raw/', 493, 509 ]
+785 silly gunzTarPerm extractEntry raw/underscore.psd
+786 silly gunzTarPerm modified mode [ 'raw/underscore.psd', 420, 436 ]
+787 silly gunzTarPerm extractEntry dist/underscore.string.min.js
+788 silly gunzTarPerm modified mode [ 'dist/underscore.string.min.js', 420, 436 ]
+789 silly gunzTarPerm extractEntry lib/underscore.string.js
+790 silly gunzTarPerm modified mode [ 'lib/underscore.string.js', 420, 436 ]
+791 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main/package.json
+792 info preinstall jungle@0.0.0
+793 info preinstall wood@0.0.0
+794 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle/package.json
+795 silly gunzTarPerm extractEntry wscript
+796 silly gunzTarPerm modified mode [ 'wscript', 420, 436 ]
+797 info preinstall main@0.0.0
+798 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply/package.json
+799 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/package.json
+800 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main/package.json
+801 silly gunzTarPerm extractEntry test/run-qunit.js
+802 silly gunzTarPerm modified mode [ 'test/run-qunit.js', 420, 436 ]
+803 silly gunzTarPerm extractEntry test/speed.js
+804 silly gunzTarPerm modified mode [ 'test/speed.js', 420, 436 ]
+805 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle/package.json
+806 silly install resolved []
+807 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+808 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+809 silly prepareForInstallMany adding callsite@~0.0.2 from wood dependencies
+810 silly prepareForInstallMany adding main@git://github.com/dbrock/node-main.git from wood dependencies
+811 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/package.json
+812 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main/package.json
+813 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote/package.json
+814 silly gunzTarPerm extractEntry test/groupTest.js
+815 silly install resolved []
+816 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+817 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+818 info linkStuff apply@0.0.0
+819 silly linkStuff apply@0.0.0 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+820 verbose linkBins apply@0.0.0
+821 verbose linkMans apply@0.0.0
+822 verbose rebuildBundles apply@0.0.0
+823 info preinstall regexp-quote@0.0.0
+824 silly install resolved []
+825 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+826 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+827 info install apply@0.0.0
+828 silly cache add args [ 'callsite@~0.0.2', null ]
+829 verbose cache add spec callsite@~0.0.2
+830 silly cache add parsed spec Result {
+830 silly cache add   raw: 'callsite@~0.0.2',
+830 silly cache add   scope: null,
+830 silly cache add   name: 'callsite',
+830 silly cache add   rawSpec: '~0.0.2',
+830 silly cache add   spec: '>=0.0.2 <0.1.0',
+830 silly cache add   type: 'range' }
+831 silly addNamed callsite@>=0.0.2 <0.1.0
+832 verbose addNamed ">=0.0.2 <0.1.0" is a valid semver range for callsite
+833 silly addNameRange { name: 'callsite', range: '>=0.0.2 <0.1.0', hasData: false }
+834 silly mapToRegistry name callsite
+835 silly mapToRegistry using default registry
+836 silly mapToRegistry registry https://registry.npmjs.org/
+837 silly mapToRegistry uri https://registry.npmjs.org/callsite
+838 verbose addNameRange registry:https://registry.npmjs.org/callsite not in flight; fetching
+839 silly cache add args [ 'main@git://github.com/dbrock/node-main.git', null ]
+840 verbose cache add spec main@git://github.com/dbrock/node-main.git
+841 verbose request uri https://registry.npmjs.org/callsite
+842 verbose request no auth needed
+843 info attempt registry request try #1 at 12:01:36 PM
+844 http request GET https://registry.npmjs.org/callsite
+845 silly cache add parsed spec Result {
+845 silly cache add   raw: 'main@git://github.com/dbrock/node-main.git',
+845 silly cache add   scope: null,
+845 silly cache add   name: 'main',
+845 silly cache add   rawSpec: 'git://github.com/dbrock/node-main.git',
+845 silly cache add   spec: 'git://github.com/dbrock/node-main.git',
+845 silly cache add   type: 'hosted',
+845 silly cache add   hosted:
+845 silly cache add    { type: 'github',
+845 silly cache add      ssh: 'git@github.com:dbrock/node-main.git',
+845 silly cache add      sshUrl: 'git+ssh://git@github.com/dbrock/node-main.git',
+845 silly cache add      httpsUrl: 'git+https://github.com/dbrock/node-main.git',
+845 silly cache add      gitUrl: 'git://github.com/dbrock/node-main.git',
+845 silly cache add      shortcut: 'github:dbrock/node-main',
+845 silly cache add      directUrl: 'https://raw.githubusercontent.com/dbrock/node-main/master/package.json' } }
+846 verbose addRemoteGit caching git://github.com/dbrock/node-main.git
+847 verbose addRemoteGit git://github.com/dbrock/node-main.git is a repository hosted by github
+848 silly tryClone cloning git://github.com/dbrock/node-main.git via git://github.com/dbrock/node-main.git
+849 verbose tryClone git-github-com-dbrock-node-main-git-2ccd6cb7 not in flight; caching
+850 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote/package.json
+851 info linkStuff jungle@0.0.0
+852 silly linkStuff jungle@0.0.0 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+853 info postinstall apply@0.0.0
+854 silly gunzTarPerm extractEntry test/helper.js
+855 silly gunzTarPerm extractEntry test/parallelTest.js
+856 verbose linkBins jungle@0.0.0
+857 verbose linkMans jungle@0.0.0
+858 verbose rebuildBundles jungle@0.0.0
+859 info linkStuff main@0.0.0
+860 silly linkStuff main@0.0.0 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+861 info install jungle@0.0.0
+862 verbose unlock done using /home/kcagle/.npm/_locks/apply-a14c9847c8a8b767.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/apply
+863 verbose linkBins main@0.0.0
+864 verbose linkMans main@0.0.0
+865 verbose rebuildBundles main@0.0.0
+866 info postinstall jungle@0.0.0
+867 info install main@0.0.0
+868 info postinstall main@0.0.0
+869 verbose unlock done using /home/kcagle/.npm/_locks/jungle-81d5cde2d29c31f9.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/jungle
+870 info git [ 'config', '--get', 'remote.origin.url' ]
+871 silly validateExistingRemote git://github.com/dbrock/node-main.git remote.origin.url: git://github.com/dbrock/node-main.git
+872 verbose validateExistingRemote git://github.com/dbrock/node-main.git is updating existing cached remote /home/kcagle/.npm/_git-remotes/git-github-com-dbrock-node-main-git-2ccd6cb7
+873 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote/package.json
+874 verbose unlock done using /home/kcagle/.npm/_locks/main-27f6e0746bf227f6.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/main
+875 silly gunzTarPerm extractEntry README.md
+876 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+877 info git [ 'fetch', '-a', 'origin' ]
+878 silly install resolved []
+879 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+880 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+881 http 200 https://registry.npmjs.org/callsite
+882 silly get cb [ 200,
+882 silly get   { server: 'nginx/1.10.1',
+882 silly get     'content-type': 'application/json',
+882 silly get     'last-modified': 'Tue, 14 Feb 2017 22:53:27 GMT',
+882 silly get     etag: 'W/"58a38a67-d5b"',
+882 silly get     'content-encoding': 'gzip',
+882 silly get     'cache-control': 'max-age=300',
+882 silly get     'content-length': '1128',
+882 silly get     'accept-ranges': 'bytes',
+882 silly get     date: 'Sun, 02 Jul 2017 19:18:18 GMT',
+882 silly get     via: '1.1 varnish',
+882 silly get     age: '269',
+882 silly get     connection: 'keep-alive',
+882 silly get     'x-served-by': 'cache-lax8647-LAX',
+882 silly get     'x-cache': 'HIT',
+882 silly get     'x-cache-hits': '2',
+882 silly get     'x-timer': 'S1499023098.257526,VS0,VE0',
+882 silly get     vary: 'Accept-Encoding' } ]
+883 verbose get saving callsite to /home/kcagle/.npm/registry.npmjs.org/callsite/.cache.json
+884 silly gunzTarPerm extractEntry test/strings.js
+885 silly gunzTarPerm modified mode [ 'test/strings.js', 420, 436 ]
+886 silly gunzTarPerm extractEntry test/strings_standalone.js
+887 silly gunzTarPerm modified mode [ 'test/strings_standalone.js', 420, 436 ]
+888 info linkStuff regexp-quote@0.0.0
+889 silly linkStuff regexp-quote@0.0.0 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+890 silly addNameRange number 2 { name: 'callsite', range: '>=0.0.2 <0.1.0', hasData: true }
+891 silly addNameRange versions [ 'callsite', [ '0.0.1', '0.0.2', '1.0.0' ] ]
+892 silly addNamed callsite@0.0.2
+893 verbose addNamed "0.0.2" is a plain semver version for callsite
+894 silly mapToRegistry name callsite
+895 silly mapToRegistry using default registry
+896 silly mapToRegistry registry https://registry.npmjs.org/
+897 silly mapToRegistry uri https://registry.npmjs.org/callsite
+898 verbose addRemoteTarball https://registry.npmjs.org/callsite/-/callsite-0.0.2.tgz not in flight; adding
+899 verbose addRemoteTarball [ 'https://registry.npmjs.org/callsite/-/callsite-0.0.2.tgz',
+899 verbose addRemoteTarball   '8caabfeaf82a347810691ee113a754189077de9a' ]
+900 verbose linkBins regexp-quote@0.0.0
+901 verbose linkMans regexp-quote@0.0.0
+902 verbose rebuildBundles regexp-quote@0.0.0
+903 silly gunzTarPerm extractEntry test/underscore.js
+904 silly gunzTarPerm modified mode [ 'test/underscore.js', 420, 436 ]
+905 silly gunzTarPerm extractEntry test/test.html
+906 silly gunzTarPerm modified mode [ 'test/test.html', 420, 436 ]
+907 info install regexp-quote@0.0.0
+908 info retry fetch attempt 1 at 12:01:36 PM
+909 info attempt registry request try #1 at 12:01:36 PM
+910 http fetch GET https://registry.npmjs.org/callsite/-/callsite-0.0.2.tgz
+911 info postinstall regexp-quote@0.0.0
+912 verbose unlock done using /home/kcagle/.npm/_locks/regexp-quote-e638c04405333a68.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/regexp-quote
+913 silly gunzTarPerm extractEntry underscore-min.js
+914 silly gunzTarPerm modified mode [ 'underscore-min.js', 420, 436 ]
+915 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec/package.json
+916 info preinstall kexec@0.0.3
+917 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec/package.json
+918 silly gunzTarPerm extractEntry test/test_standalone.html
+919 silly gunzTarPerm modified mode [ 'test/test_standalone.html', 420, 436 ]
+920 silly gunzTarPerm extractEntry test/test_underscore/arrays.js
+921 silly gunzTarPerm modified mode [ 'test/test_underscore/arrays.js', 420, 436 ]
+922 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec/package.json
+923 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors/package.json
+924 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step/package.json
+925 info preinstall colors@0.6.2
+926 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors/package.json
+927 info preinstall step@0.0.6
+928 silly gunzTarPerm extractEntry underscore.js
+929 silly gunzTarPerm modified mode [ 'underscore.js', 420, 436 ]
+930 silly install resolved []
+931 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+932 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+933 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step/package.json
+934 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors/package.json
+935 info linkStuff kexec@0.0.3
+936 silly linkStuff kexec@0.0.3 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+937 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step/package.json
+938 verbose linkBins kexec@0.0.3
+939 verbose linkMans kexec@0.0.3
+940 verbose rebuildBundles kexec@0.0.3
+941 info install kexec@0.0.3
+942 verbose unsafe-perm in lifecycle true
+943 info kexec@0.0.3 Failed to exec install script
+944 verbose unlock done using /home/kcagle/.npm/_locks/kexec-9acc282f420745a7.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+945 silly install resolved []
+946 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+947 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+948 silly gunzTarPerm extractEntry test/test_underscore/collections.js
+949 silly gunzTarPerm modified mode [ 'test/test_underscore/collections.js', 420, 436 ]
+950 silly gunzTarPerm extractEntry test/test_underscore/functions.js
+951 silly gunzTarPerm modified mode [ 'test/test_underscore/functions.js', 420, 436 ]
+952 silly install resolved []
+953 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+954 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+955 info linkStuff colors@0.6.2
+956 silly linkStuff colors@0.6.2 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+957 verbose linkBins colors@0.6.2
+958 verbose linkMans colors@0.6.2
+959 verbose rebuildBundles colors@0.6.2
+960 silly gunzTarPerm extractEntry test/test_underscore/objects.js
+961 silly gunzTarPerm modified mode [ 'test/test_underscore/objects.js', 420, 436 ]
+962 silly gunzTarPerm extractEntry test/test_underscore/chaining.js
+963 silly gunzTarPerm modified mode [ 'test/test_underscore/chaining.js', 420, 436 ]
+964 info install colors@0.6.2
+965 info linkStuff step@0.0.6
+966 silly linkStuff step@0.0.6 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+967 http fetch 200 https://registry.npmjs.org/callsite/-/callsite-0.0.2.tgz
+968 info postinstall colors@0.6.2
+969 verbose linkBins step@0.0.6
+970 verbose linkMans step@0.0.6
+971 verbose rebuildBundles step@0.0.6
+972 info install step@0.0.6
+973 verbose unlock done using /home/kcagle/.npm/_locks/colors-f42531fa9b8dc3ee.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/colors
+974 info postinstall step@0.0.6
+975 silly fetchAndShaCheck shasum 8caabfeaf82a347810691ee113a754189077de9a
+976 verbose unlock done using /home/kcagle/.npm/_locks/step-a172822de8cf8847.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/step
+977 verbose addTmpTarball /tmp/npm-29835-95a58096/registry.npmjs.org/callsite/-/callsite-0.0.2.tgz not in flight; adding
+978 verbose addTmpTarball already have metadata; skipping unpack for callsite@0.0.2
+979 silly gunzTarPerm extractEntry test/test_underscore/temp.js
+980 silly gunzTarPerm modified mode [ 'test/test_underscore/temp.js', 420, 436 ]
+981 silly gunzTarPerm extractEntry test/test_underscore/utility.js
+982 silly gunzTarPerm modified mode [ 'test/test_underscore/utility.js', 420, 436 ]
+983 silly gunzTarPerm extractEntry test/test_underscore/speed.js
+984 silly gunzTarPerm modified mode [ 'test/test_underscore/speed.js', 420, 436 ]
+985 silly cache afterAdd callsite@0.0.2
+986 verbose afterAdd /home/kcagle/.npm/callsite/0.0.2/package/package.json not in flight; writing
+987 verbose afterAdd /home/kcagle/.npm/callsite/0.0.2/package/package.json written
+988 silly gunzTarPerm extractEntry test/test_underscore/test.html
+989 silly gunzTarPerm modified mode [ 'test/test_underscore/test.html', 420, 436 ]
+990 silly gunzTarPerm extractEntry test/test_underscore/temp_tests.html
+991 silly gunzTarPerm modified mode [ 'test/test_underscore/temp_tests.html', 420, 436 ]
+992 silly gunzTarPerm extractEntry test/test_underscore/vendor/jquery.js
+993 silly gunzTarPerm modified mode [ 'test/test_underscore/vendor/jquery.js', 420, 436 ]
+994 silly gunzTarPerm extractEntry test/test_underscore/vendor/jslitmus.js
+995 silly gunzTarPerm modified mode [ 'test/test_underscore/vendor/jslitmus.js', 420, 436 ]
+996 silly gunzTarPerm extractEntry test/test_underscore/vendor/qunit.js
+997 silly gunzTarPerm modified mode [ 'test/test_underscore/vendor/qunit.js', 420, 436 ]
+998 silly gunzTarPerm extractEntry test/test_underscore/vendor/qunit.css
+999 silly gunzTarPerm modified mode [ 'test/test_underscore/vendor/qunit.css', 420, 436 ]
+1000 verbose updateRemote git fetch -a origin (git://github.com/dbrock/node-main.git)
+1001 verbose setPermissions git://github.com/dbrock/node-main.git set permissions on /home/kcagle/.npm/_git-remotes/git-github-com-dbrock-node-main-git-2ccd6cb7
+1002 verbose resolveHead git://github.com/dbrock/node-main.git original treeish: master
+1003 info git [ 'rev-list', '-n1', 'master' ]
+1004 silly resolveHead git://github.com/dbrock/node-main.git resolved treeish: eb01d96b3e67932359e71458e473764bf0ccd425
+1005 verbose resolveHead git://github.com/dbrock/node-main.git resolved Git URL: git://github.com/dbrock/node-main.git#eb01d96b3e67932359e71458e473764bf0ccd425
+1006 silly resolveHead Git working directory: /tmp/npm-29835-95a58096/git-cache-ff03d0f63308/eb01d96b3e67932359e71458e473764bf0ccd425
+1007 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt/package.json
+1008 info git [ 'clone',
+1008 info git   '/home/kcagle/.npm/_git-remotes/git-github-com-dbrock-node-main-git-2ccd6cb7',
+1008 info git   '/tmp/npm-29835-95a58096/git-cache-ff03d0f63308/eb01d96b3e67932359e71458e473764bf0ccd425' ]
+1009 info preinstall bcrypt@0.5.0
+1010 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt/package.json
+1011 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt/package.json
+1012 verbose cloneResolved git://github.com/dbrock/node-main.git clone Cloning into '/tmp/npm-29835-95a58096/git-cache-ff03d0f63308/eb01d96b3e67932359e71458e473764bf0ccd425'...
+1012 verbose cloneResolved done.
+1013 info git [ 'checkout', 'eb01d96b3e67932359e71458e473764bf0ccd425' ]
+1014 silly install resolved []
+1015 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+1016 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+1017 verbose checkoutTreeish git://github.com/dbrock/node-main.git checkout Note: checking out 'eb01d96b3e67932359e71458e473764bf0ccd425'.
+1017 verbose checkoutTreeish
+1017 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+1017 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+1017 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+1017 verbose checkoutTreeish
+1017 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+1017 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+1017 verbose checkoutTreeish
+1017 verbose checkoutTreeish   git checkout -b new_branch_name
+1017 verbose checkoutTreeish
+1017 verbose checkoutTreeish HEAD is now at eb01d96... Initial import.
+1018 info linkStuff bcrypt@0.5.0
+1019 silly linkStuff bcrypt@0.5.0 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+1020 verbose addLocalDirectory /home/kcagle/.npm/main/0.0.0/package.tgz not in flight; packing
+1021 verbose linkBins bcrypt@0.5.0
+1022 verbose linkMans bcrypt@0.5.0
+1023 verbose rebuildBundles bcrypt@0.5.0
+1024 verbose tar pack [ '/home/kcagle/.npm/main/0.0.0/package.tgz',
+1024 verbose tar pack   '/tmp/npm-29835-95a58096/git-cache-ff03d0f63308/eb01d96b3e67932359e71458e473764bf0ccd425' ]
+1025 verbose tarball /home/kcagle/.npm/main/0.0.0/package.tgz
+1026 verbose folder /tmp/npm-29835-95a58096/git-cache-ff03d0f63308/eb01d96b3e67932359e71458e473764bf0ccd425
+1027 info install bcrypt@0.5.0
+1028 verbose unsafe-perm in lifecycle true
+1029 info bcrypt@0.5.0 Failed to exec install script
+1030 verbose unlock done using /home/kcagle/.npm/_locks/bcrypt-4ce89505299c6b0a.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+1031 verbose addLocalTarball adding from inside cache /home/kcagle/.npm/main/0.0.0/package.tgz
+1032 verbose addRemoteGit data._from: git://github.com/dbrock/node-main.git
+1033 verbose addRemoteGit data._resolved: git://github.com/dbrock/node-main.git#eb01d96b3e67932359e71458e473764bf0ccd425
+1034 silly cache afterAdd main@0.0.0
+1035 verbose afterAdd /home/kcagle/.npm/main/0.0.0/package/package.json not in flight; writing
+1036 verbose afterAdd /home/kcagle/.npm/main/0.0.0/package/package.json written
+1037 silly install resolved [ { name: 'callsite',
+1037 silly install resolved     version: '0.0.2',
+1037 silly install resolved     description: 'access to v8\'s CallSites',
+1037 silly install resolved     keywords: [ 'stack', 'trace', 'line' ],
+1037 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+1037 silly install resolved     dependencies: {},
+1037 silly install resolved     devDependencies: { mocha: '*', should: '*' },
+1037 silly install resolved     main: 'index',
+1037 silly install resolved     engines: { node: '*' },
+1037 silly install resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+1037 silly install resolved     _id: 'callsite@0.0.2',
+1037 silly install resolved     _engineSupported: true,
+1037 silly install resolved     _npmVersion: '1.0.104',
+1037 silly install resolved     _nodeVersion: 'v0.4.12',
+1037 silly install resolved     _defaultsLoaded: true,
+1037 silly install resolved     dist:
+1037 silly install resolved      { shasum: '8caabfeaf82a347810691ee113a754189077de9a',
+1037 silly install resolved        tarball: 'https://registry.npmjs.org/callsite/-/callsite-0.0.2.tgz' },
+1037 silly install resolved     maintainers: [ [Object] ],
+1037 silly install resolved     directories: {},
+1037 silly install resolved     _shasum: '8caabfeaf82a347810691ee113a754189077de9a',
+1037 silly install resolved     _resolved: 'https://registry.npmjs.org/callsite/-/callsite-0.0.2.tgz',
+1037 silly install resolved     _from: 'callsite@>=0.0.2 <0.1.0' },
+1037 silly install resolved   { author: { name: 'Daniel Brockman', email: '@dbrock' },
+1037 silly install resolved     name: 'main',
+1037 silly install resolved     description: 'Composable main() functions for Node.js',
+1037 silly install resolved     version: '0.0.0',
+1037 silly install resolved     main: 'main.js',
+1037 silly install resolved     dependencies: {},
+1037 silly install resolved     devDependencies: {},
+1037 silly install resolved     optionalDependencies: {},
+1037 silly install resolved     engines: { node: '*' },
+1037 silly install resolved     gitHead: 'eb01d96b3e67932359e71458e473764bf0ccd425',
+1037 silly install resolved     readme: 'ERROR: No README data found!',
+1037 silly install resolved     _id: 'main@0.0.0',
+1037 silly install resolved     _shasum: 'b396604c334e83aed8fd65babb295b3008e46c16',
+1037 silly install resolved     _from: 'git://github.com/dbrock/node-main.git',
+1037 silly install resolved     _resolved: 'git://github.com/dbrock/node-main.git#eb01d96b3e67932359e71458e473764bf0ccd425' } ]
+1038 info install callsite@0.0.2 into /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+1039 info install main@0.0.0 into /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+1040 info installOne callsite@0.0.2
+1041 verbose installOne of callsite to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood not in flight; installing
+1042 info installOne main@0.0.0
+1043 verbose installOne of main to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood not in flight; installing
+1044 verbose lock using /home/kcagle/.npm/_locks/callsite-6bdadae488deaa09.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1045 verbose lock using /home/kcagle/.npm/_locks/main-c39fcd8cb698a02d.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1046 silly install write writing callsite 0.0.2 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1047 silly install write writing main 0.0.0 to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1048 verbose unbuild node_modules/pouch/node_modules/wood/node_modules/callsite
+1049 verbose unbuild node_modules/pouch/node_modules/wood/node_modules/main
+1050 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite is being purged from base /home/kcagle/nodeapps/mindr
+1051 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1052 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main is being purged from base /home/kcagle/nodeapps/mindr
+1053 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1054 verbose tar unpack /home/kcagle/.npm/callsite/0.0.2/package.tgz
+1055 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1056 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite is being purged
+1057 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1058 verbose tar unpack /home/kcagle/.npm/main/0.0.0/package.tgz
+1059 verbose tar unpacking to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1060 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main is being purged
+1061 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1062 silly gunzTarPerm modes [ '775', '664' ]
+1063 silly gunzTarPerm modes [ '775', '664' ]
+1064 silly gunzTarPerm extractEntry .gitignore
+1065 silly gunzTarPerm modified mode [ '.gitignore', 420, 436 ]
+1066 silly gunzTarPerm extractEntry package.json
+1067 silly gunzTarPerm extractEntry .npmignore
+1068 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1069 silly gunzTarPerm extractEntry History.md
+1070 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+1071 silly gunzTarPerm extractEntry .npmignore
+1072 silly gunzTarPerm extractEntry main.js
+1073 silly gunzTarPerm extractEntry index.js
+1074 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1075 silly gunzTarPerm extractEntry Makefile
+1076 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+1077 silly gunzTarPerm extractEntry package.json
+1078 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1079 silly gunzTarPerm extractEntry Readme.md
+1080 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+1081 silly gunzTarPerm extractEntry examples/assert.js
+1082 silly gunzTarPerm modified mode [ 'examples/assert.js', 420, 436 ]
+1083 silly gunzTarPerm extractEntry examples/trace.js
+1084 silly gunzTarPerm modified mode [ 'examples/trace.js', 420, 436 ]
+1085 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main/package.json
+1086 silly gunzTarPerm extractEntry lib/__line.js
+1087 silly gunzTarPerm modified mode [ 'lib/__line.js', 420, 436 ]
+1088 silly gunzTarPerm extractEntry lib/__stack.js
+1089 silly gunzTarPerm modified mode [ 'lib/__stack.js', 420, 436 ]
+1090 info preinstall main@0.0.0
+1091 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main/package.json
+1092 silly gunzTarPerm extractEntry lib/callsite.js
+1093 silly gunzTarPerm modified mode [ 'lib/callsite.js', 420, 436 ]
+1094 silly gunzTarPerm extractEntry test/__line.js
+1095 silly gunzTarPerm modified mode [ 'test/__line.js', 420, 436 ]
+1096 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main/package.json
+1097 silly install resolved []
+1098 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1099 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1100 silly gunzTarPerm extractEntry test/__stack.js
+1101 silly gunzTarPerm modified mode [ 'test/__stack.js', 420, 436 ]
+1102 info linkStuff main@0.0.0
+1103 silly linkStuff main@0.0.0 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules as its parent node_modules
+1104 verbose linkBins main@0.0.0
+1105 verbose linkMans main@0.0.0
+1106 verbose rebuildBundles main@0.0.0
+1107 info install main@0.0.0
+1108 info postinstall main@0.0.0
+1109 verbose unlock done using /home/kcagle/.npm/_locks/main-c39fcd8cb698a02d.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/main
+1110 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite/package.json
+1111 info preinstall callsite@0.0.2
+1112 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite/package.json
+1113 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite/package.json
+1114 silly install resolved []
+1115 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1116 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1117 info linkStuff callsite@0.0.2
+1118 silly linkStuff callsite@0.0.2 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules as its parent node_modules
+1119 verbose linkBins callsite@0.0.2
+1120 verbose linkMans callsite@0.0.2
+1121 verbose rebuildBundles callsite@0.0.2
+1122 info install callsite@0.0.2
+1123 info postinstall callsite@0.0.2
+1124 verbose unlock done using /home/kcagle/.npm/_locks/callsite-6bdadae488deaa09.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood/node_modules/callsite
+1125 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+1126 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+1127 info linkStuff wood@0.0.0
+1128 silly linkStuff wood@0.0.0 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+1129 verbose linkBins wood@0.0.0
+1130 verbose linkMans wood@0.0.0
+1131 verbose rebuildBundles wood@0.0.0
+1132 verbose rebuildBundles [ 'callsite', 'main' ]
+1133 info install wood@0.0.0
+1134 info postinstall wood@0.0.0
+1135 verbose unlock done using /home/kcagle/.npm/_locks/wood-e41a29d38bc59520.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/wood
+1136 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore/package.json
+1137 info preinstall underscore@1.3.3
+1138 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore/package.json
+1139 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore/package.json
+1140 silly install resolved []
+1141 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+1142 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+1143 info linkStuff underscore@1.3.3
+1144 silly linkStuff underscore@1.3.3 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+1145 verbose linkBins underscore@1.3.3
+1146 verbose linkMans underscore@1.3.3
+1147 verbose rebuildBundles underscore@1.3.3
+1148 info install underscore@1.3.3
+1149 info postinstall underscore@1.3.3
+1150 verbose unlock done using /home/kcagle/.npm/_locks/underscore-2480e07285d3f5a5.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore
+1151 verbose write writing to /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string/package.json
+1152 info preinstall underscore.string@2.2.1
+1153 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string/package.json
+1154 verbose readDependencies loading dependencies from /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string/package.json
+1155 silly install resolved []
+1156 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+1157 info build /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+1158 info linkStuff underscore.string@2.2.1
+1159 silly linkStuff underscore.string@2.2.1 has /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules as its parent node_modules
+1160 verbose linkBins underscore.string@2.2.1
+1161 verbose linkMans underscore.string@2.2.1
+1162 verbose rebuildBundles underscore.string@2.2.1
+1163 info install underscore.string@2.2.1
+1164 info postinstall underscore.string@2.2.1
+1165 verbose unlock done using /home/kcagle/.npm/_locks/underscore-string-ec3ee9f8b8f71885.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/underscore.string
+1166 verbose about to build /home/kcagle/nodeapps/mindr/node_modules/pouch
+1167 verbose unlock done using /home/kcagle/.npm/_locks/pouch-4541aad1473bd284.lock for /home/kcagle/nodeapps/mindr/node_modules/pouch
+1168 verbose stack Error: kexec@0.0.3 install: `node-waf configure build`
+1168 verbose stack spawn ENOENT
+1168 verbose stack     at ChildProcess.<anonymous> (/home/kcagle/.nvm/versions/io.js/v3.3.1/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+1168 verbose stack     at emitTwo (events.js:87:13)
+1168 verbose stack     at ChildProcess.emit (events.js:172:7)
+1168 verbose stack     at maybeClose (internal/child_process.js:764:16)
+1168 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+1169 verbose pkgid kexec@0.0.3
+1170 verbose cwd /home/kcagle/nodeapps/mindr
+1171 error Linux 3.16.0-30-generic
+1172 error argv "/home/kcagle/.nvm/versions/io.js/v3.3.1/bin/iojs" "/home/kcagle/.nvm/versions/io.js/v3.3.1/bin/npm" "install" "pouch"
+1173 error node v3.3.1
+1174 error npm  v2.14.3
+1175 error file sh
+1176 error code ELIFECYCLE
+1177 error errno ENOENT
+1178 error syscall spawn
+1179 error kexec@0.0.3 install: `node-waf configure build`
+1179 error spawn ENOENT
+1180 error Failed at the kexec@0.0.3 install script 'node-waf configure build'.
+1180 error This is most likely a problem with the kexec package,
+1180 error not with npm itself.
+1180 error Tell the author that this fails on your system:
+1180 error     node-waf configure build
+1180 error You can get their info via:
+1180 error     npm owner ls kexec
+1180 error There is likely additional logging output above.
+1181 verbose exit [ 1, true ]
+1182 verbose unbuild node_modules/pouch/node_modules/kexec
+1183 info preuninstall kexec@0.0.3
+1184 info uninstall kexec@0.0.3
+1185 verbose unbuild rmStuff kexec@0.0.3 from /home/kcagle/nodeapps/mindr/node_modules
+1186 verbose unbuild rmStuff in /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules
+1187 info postuninstall kexec@0.0.3
+1188 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec is being purged from base /home/kcagle/nodeapps/mindr
+1189 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+1190 silly vacuum-fs purging /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/kexec
+1191 silly vacuum-fs quitting because other entries in /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules
+1192 verbose unbuild node_modules/pouch/node_modules/bcrypt
+1193 info preuninstall bcrypt@0.5.0
+1194 info uninstall bcrypt@0.5.0
+1195 verbose unbuild rmStuff bcrypt@0.5.0 from /home/kcagle/nodeapps/mindr/node_modules
+1196 verbose unbuild rmStuff in /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules
+1197 info postuninstall bcrypt@0.5.0
+1198 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt is being purged from base /home/kcagle/nodeapps/mindr
+1199 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+1200 silly vacuum-fs purging /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules/bcrypt
+1201 silly vacuum-fs quitting because other entries in /home/kcagle/nodeapps/mindr/node_modules/pouch/node_modules
+1202 verbose unbuild node_modules/pouch
+1203 info preuninstall pouch@0.0.0
+1204 info uninstall pouch@0.0.0
+1205 verbose unbuild rmStuff pouch@0.0.0 from /home/kcagle/nodeapps/mindr/node_modules
+1206 info postuninstall pouch@0.0.0
+1207 silly gentlyRm /home/kcagle/nodeapps/mindr/node_modules/pouch is being purged from base /home/kcagle/nodeapps/mindr
+1208 verbose gentlyRm don't care about contents; nuking /home/kcagle/nodeapps/mindr/node_modules/pouch
+1209 silly vacuum-fs purging /home/kcagle/nodeapps/mindr/node_modules/pouch
+1210 silly vacuum-fs quitting because other entries in /home/kcagle/nodeapps/mindr/node_modules
